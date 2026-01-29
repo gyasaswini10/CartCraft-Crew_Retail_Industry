@@ -25,9 +25,15 @@ const Dashboard = ({ user, handleLogout }) => {
     const [catalog, setCatalog] = useState([]);
 
     useEffect(() => {
-        fetchProducts();
         fetchCatalog();
     }, []);
+
+    useEffect(() => {
+        // Fetch products only after catalog is loaded
+        if (catalog.length > 0) {
+            fetchProducts();
+        }
+    }, [catalog]);
 
     useEffect(() => {
         // Debug: Log catalog products when loaded
@@ -113,7 +119,11 @@ const Dashboard = ({ user, handleLogout }) => {
                         minimumOrderQuantity: datasetProduct.minimumOrderQuantity,
                         warrantyInformation: datasetProduct.warrantyInformation,
                         returnPolicy: datasetProduct.returnPolicy,
-                        availabilityStatus: datasetProduct.availabilityStatus
+                        availabilityStatus: datasetProduct.availabilityStatus,
+                        // Add image URLs from dataset
+                        image_url: datasetProduct.images && datasetProduct.images.length > 0 ? datasetProduct.images[0] : datasetProduct.thumbnail,
+                        imageUrl: datasetProduct.images && datasetProduct.images.length > 0 ? datasetProduct.images[0] : datasetProduct.thumbnail,
+                        thumbnail: datasetProduct.thumbnail
                     };
                 }
                 return dbProduct;
@@ -266,81 +276,65 @@ const Dashboard = ({ user, handleLogout }) => {
             <div className="customer-layout">
                 <div className="product-grid">
                     {products.map(p => (
-                        <div key={p._id || p.id} className="product-card">
-                            <div className="product-image-container">
-                                <img 
-                                    src={p.thumbnail || (p.images && p.images[0]) || p.image_url || p.imageUrl || 'https://placehold.co/200'} 
-                                    alt={p.name || p.title} 
-                                    className="product-image"
-                                />
+                        <div key={p._id} className="product-card">
+                            <div style={{ position: 'relative' }}>
+                                <img src={p.image_url || p.imageUrl || 'https://placehold.co/200'} alt={p.name} style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
                             </div>
 
-                            <div className="product-info">
-                                <h3 className="product-title">{p.name || p.title || 'Unnamed Product'}</h3>
-                                
-                                <p className="product-description">
-                                    {p.description ? p.description.substring(0, 150) + '...' : 'No description available'}
-                                </p>
+                            <h3 style={{ fontSize: '1.2rem', margin: '0.5rem 0' }}>{p.name || 'Unnamed Product'}</h3>
 
-                                <div className="product-meta">
-                                    <div className="meta-row">
-                                        <span className="meta-label">Brand:</span>
-                                        <span className="meta-value">{p.brand || 'Generic'}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Rating:</span>
-                                        <span className="meta-value">
-                                            {p.rating || 0} ⭐
-                                            <span className="review-count">({p.reviews?.length || 0} reviews)</span>
-                                        </span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Stock:</span>
-                                        <span className="meta-value">{p.stock !== undefined ? p.stock + ' units' : 'N/A'}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Dimensions:</span>
-                                        <span className="meta-value">
-                                            {p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}x${p.dimensions.depth}` : 'N/A'}
-                                        </span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Weight:</span>
-                                        <span className="meta-value">{p.weight || 'N/A'}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Shipping:</span>
-                                        <span className="meta-value">{p.shippingInformation || 'Standard'}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">SKU:</span>
-                                        <span className="meta-value">{p.sku || 'N/A'}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Tags:</span>
-                                        <span className="meta-value">{p.tags?.join(', ') || 'None'}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Min Order:</span>
-                                        <span className="meta-value">{p.minimumOrderQuantity || 1}</span>
-                                    </div>
-                                    <div className="meta-row">
-                                        <span className="meta-label">Policy:</span>
-                                        <span className="meta-value">{p.returnPolicy || 'No Returns'}</span>
-                                    </div>
+                            <p className="product-desc" style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
+                                {p.description ? p.description.substring(0, 80) + '...' : 'No description'}
+                            </p>
+
+                            <div className="product-details" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', background: '#f8f9fa', padding: '10px', borderRadius: '8px', fontSize: '0.8rem', textAlign: 'left' }}>
+                                <div>
+                                    <strong>Brand:</strong> {p.brand || 'Generic'}
+                                </div>
+                                <div>
+                                    <strong>Rating:</strong> {p.rating || 0} ⭐
+                                    <span style={{ fontSize: '0.7rem', color: '#666' }}>({p.reviews?.length || 0} reviews)</span>
                                 </div>
 
-                                <div className="product-price">
-                                    ${p.price || 0}
+                                <div>
+                                    <strong>Stock:</strong> {p.stock !== undefined ? p.stock : 'N/A'} units
+                                </div>
+                                <div>
+                                    <strong>Dimensions:</strong> {p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}x${p.dimensions.depth}` : 'N/A'}
                                 </div>
 
-                                <button
-                                    onClick={() => addToCart(p)}
-                                    className="add-to-basket-btn"
-                                >
-                                    Add to Basket
-                                </button>
+                                <div>
+                                    <strong>Weight:</strong> {p.weight || 'N/A'}
+                                </div>
+                                <div>
+                                    <strong>Shipping:</strong> {p.shippingInformation || 'Standard'}
+                                </div>
+
+                                <div>
+                                    <strong>SKU:</strong> {p.sku || 'N/A'}
+                                </div>
+                                <div>
+                                    <strong>Tags:</strong> {p.tags?.join(', ') || 'None'}
+                                </div>
+
+                                <div>
+                                    <strong>Min Order:</strong> {p.minimumOrderQuantity || 1}
+                                </div>
+                                <div>
+                                    <strong>Policy:</strong> {p.returnPolicy || 'No Returns'}
+                                </div>
                             </div>
+
+                            <div className="product-price" style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: '1rem 0' }}>
+                                ${p.price || 0}
+                            </div>
+
+                            <button
+                                onClick={() => addToCart(p)}
+                                style={{ width: '100%', background: '#222', color: 'white', padding: '12px', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
+                            >
+                                Add to Basket
+                            </button>
                         </div>
                     ))}
                 </div>
