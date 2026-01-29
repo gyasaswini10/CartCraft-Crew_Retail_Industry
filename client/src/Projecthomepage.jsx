@@ -13,66 +13,66 @@ const Projecthomepage = () => {
     const [role, setRole] = useState('Customer'); // Default role
 
     useEffect(() => {
-    const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
 
-    if (token) {
-        try {
-            // Inside handleAuth after successful login
-            const decoded = jwtDecode(data.token);
-            setUser({ 
-                 role: data.role, 
-                 username: data.username || username,
-                 id: data.id || decoded.id // Ensure ID is saved here!
-             });
-           
-        } catch (err) {
-            console.error('Invalid token');
-            localStorage.removeItem('token');
+        if (token) {
+            try {
+                // Inside handleAuth after successful login
+                const decoded = jwtDecode(token);
+                setUser({
+                    role: decoded.role,
+                    username: decoded.username,
+                    id: decoded.id || decoded.userId // Allow for id variations
+                });
+
+            } catch (err) {
+                console.error('Invalid token');
+                localStorage.removeItem('token');
+            }
         }
-    }
-}, []);
+    }, []);
 
 
     const handleAuth = async (e) => {
-    e.preventDefault();
-    const endpoint = isSignup ? 'register' : 'login';
-    // Ensure these variables exist in your useState hooks
-    const body = isSignup ? { username, password, role } : { username, password };
+        e.preventDefault();
+        const endpoint = isSignup ? 'register' : 'login';
+        // Ensure these variables exist in your useState hooks
+        const body = isSignup ? { username, password, role } : { username, password };
 
-    try {
-        const response = await fetch(`http://localhost:5000/api/auth/${endpoint}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(body)
-        });
+        try {
+            const response = await fetch(`http://localhost:5000/api/auth/${endpoint}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body)
+            });
 
-        const data = await response.json();
+            const data = await response.json();
 
-        if (response.ok) {
-            if (isSignup) {
-                alert('Registration Successful! Please Login.');
-                setIsSignup(false);
+            if (response.ok) {
+                if (isSignup) {
+                    alert('Registration Successful! Please Login.');
+                    setIsSignup(false);
+                } else {
+                    localStorage.setItem('token', data.token);
+                    localStorage.setItem('role', data.role);
+                    // Fix: using data.username from the response if available
+                    setUser({ role: data.role, username: data.username || username });
+                    setShowLogin(false);
+                    alert('Login Successful');
+                }
             } else {
-                localStorage.setItem('token', data.token);
-                localStorage.setItem('role', data.role);
-                // Fix: using data.username from the response if available
-                setUser({ role: data.role, username: data.username || username });
-                setShowLogin(false);
-                alert('Login Successful');
+                alert(data.error || 'Authentication Failed');
             }
-        } else {
-            alert(data.error || 'Authentication Failed');
+        } catch (error) {
+            console.error('Auth Error:', error);
+            alert('Server connection failed. Check if backend is running on port 5000.');
         }
-    } catch (error) {
-        console.error('Auth Error:', error);
-        alert('Server connection failed. Check if backend is running on port 5000.');
-    }
-};
+    };
     const handleLogout = () => {
-    localStorage.removeItem('token'); // keep
-    localStorage.removeItem('role');  // optional, legacy cleanup
-    setUser(null);
-};
+        localStorage.removeItem('token'); // keep
+        localStorage.removeItem('role');  // optional, legacy cleanup
+        setUser(null);
+    };
 
     return (
         <div className="homepage-container">
