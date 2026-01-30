@@ -13,22 +13,25 @@ router.post('/checkout', verifyToken, authorizeRoles('Customer'), async (req, re
         const processedItems = [];
 
         // Calculate total and verify stock (optional, but good practice)
+        // Calculate total and verify stock (optional, but good practice)
+        console.log("Checkout User:", req.user.id);
+        console.log("Checkout Items:", items);
         for (const item of items) {
-            const product = await Product.findOne({ product_id: item.product_id });
+            const product = await Product.findOne({ productId: item.productId });
             if (!product) {
-                return res.status(404).json({ error: `Product ${item.product_id} not found` });
+                return res.status(404).json({ error: `Product ${item.productId} not found` });
             }
-            total_price += product.unit_price * item.quantity;
+            total_price += product.price * item.quantity;
             processedItems.push({
-                product_id: item.product_id,
+                productId: item.productId,
                 quantity: item.quantity,
-                price_at_purchase: product.unit_price
+                price_at_purchase: product.price
             });
         }
 
         const transaction = new Transaction({
             invoice_no: invoice_no || `INV-${Date.now()}`,
-            customer_id: req.user.userId,
+            customer_id: req.user.id,
             items: processedItems,
             total_price
         });
@@ -36,6 +39,7 @@ router.post('/checkout', verifyToken, authorizeRoles('Customer'), async (req, re
         await transaction.save();
         res.status(201).json({ message: 'Transaction successful', transaction });
     } catch (error) {
+        console.error("Checkout Error:", error); // Log the full error
         res.status(500).json({ error: 'Checkout failed', details: error.message });
     }
 });

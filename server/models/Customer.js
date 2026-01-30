@@ -57,6 +57,15 @@ const customerSchema = new mongoose.Schema({
     default: []
   },
 
+  // 🛒 Persistent Basket
+  basket: [{
+    productId: String,
+    name: String,
+    price: Number,
+    quantity: { type: Number, default: 1 },
+    image_url: String 
+  }],
+
   createdAt: {
     type: String
   }

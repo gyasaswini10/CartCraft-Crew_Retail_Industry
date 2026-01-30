@@ -10,6 +10,7 @@ const productRoutes = require("./routes/productRoutes");
 const transactionRoutes = require("./routes/transactionRoutes");
 const reportRoutes = require("./routes/reportRoutes");
 const authRoutes = require('./routes/authRoutes');
+const cartRoutes = require('./routes/cartRoutes');
 const verifyToken = require('./middleware/authMiddleware');
 
 
@@ -148,14 +149,27 @@ app.use("/api/products", productRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/reports", reportRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/cart', cartRoutes);
 
 app.post("/recommendations", async (req, res) => {
   try {
     const { customerId, currentCart } = req.body;
+    console.log("Rec Request:", { customerId, cartSize: currentCart?.length });
 
-    const customer = await Customer.findOne({ customerId });
+    if (!customerId) return res.status(400).json({ error: "Missing customerId" });
+    if (!currentCart) return res.status(400).json({ error: "Missing currentCart" });
+
+    let customer = await Customer.findOne({ customerId });
     if (!customer) {
-      return res.status(404).json({ error: "Customer not found" });
+      // Auto-create customer profile if it doesn't exist
+      console.log(`Creating new customer profile for ID: ${customerId}`);
+      customer = new Customer({
+        customerId,
+        name: "Valued Customer",
+        ageGroup: "Middle", // Default
+        shoppingFrequency: "Monthly"
+      });
+      await customer.save();
     }
 
     const shouldNudge =
@@ -436,7 +450,7 @@ app.post("/recommendations", async (req, res) => {
 
   } catch (error) { // ⬅️ The "End of the route" is right before this catch block
     console.error("Recommendation error:", error);
-    res.status(500).json({ error: "Server error" });
+    res.status(500).json({ error: "Server error", details: error.message });
   }
 });
 

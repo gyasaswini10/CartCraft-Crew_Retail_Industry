@@ -35,6 +35,25 @@ const Dashboard = ({ user, handleLogout }) => {
         }
     }, [catalog]);
 
+    // Fetch Cart on User Login
+    useEffect(() => {
+        if (user && user.id) {
+            fetchCart();
+        }
+    }, [user]);
+
+    const fetchCart = async () => {
+        try {
+            const res = await fetch(`http://localhost:5000/api/cart/${user.id || user._id}`);
+            if (res.ok) {
+                const data = await res.json();
+                setCart(data);
+            }
+        } catch (err) {
+            console.error("Failed to fetch cart", err);
+        }
+    };
+
     useEffect(() => {
         // Debug: Log catalog products when loaded
         if (catalog.length > 0) {
@@ -211,14 +230,49 @@ const Dashboard = ({ user, handleLogout }) => {
         }
     };
 
-    const addToCart = (product) => {
-        setCart([...cart, { ...product, quantity: 1 }]);
+    const addToCart = async (product) => {
+        console.log('Current User State:', user);
+        try {
+            const res = await fetch('http://localhost:5000/api/cart/add', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    customerId: user._id || user.id,
+                    product: {
+                        productId: product.productId,
+                        name: product.name,
+                        price: product.price,
+                        imageUrl: product.image_url || product.imageUrl
+                    }
+                })
+            });
+            if (res.ok) {
+                const updatedCart = await res.json();
+                setCart(updatedCart);
+            }
+        } catch (err) {
+            console.error("Failed to add to cart", err);
+        }
     };
 
-    const removeFromCart = (index) => {
-        const newCart = [...cart];
-        newCart.splice(index, 1);
-        setCart(newCart);
+    const removeFromCart = async (index) => {
+        const itemToRemove = cart[index];
+        try {
+            const res = await fetch('http://localhost:5000/api/cart/remove', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    customerId: user._id || user.id,
+                    productId: itemToRemove.productId
+                })
+            });
+            if (res.ok) {
+                const updatedCart = await res.json();
+                setCart(updatedCart);
+            }
+        } catch (err) {
+            console.error("Failed to remove from cart", err);
+        }
     };
 
     const handleImportDataset = async () => {

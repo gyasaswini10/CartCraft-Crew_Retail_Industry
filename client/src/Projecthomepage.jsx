@@ -56,7 +56,12 @@ const Projecthomepage = () => {
                     localStorage.setItem('token', data.token);
                     localStorage.setItem('role', data.role);
                     // Fix: using data.username from the response if available
-                    setUser({ role: data.role, username: data.username || username });
+                    // Ensure ID is set so Dashboard can use it for cart operations
+                    setUser({
+                        role: data.role,
+                        username: data.username || username,
+                        id: data.id
+                    });
                     setShowLogin(false);
                     alert('Login Successful');
                 }

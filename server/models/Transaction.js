@@ -5,7 +5,7 @@ const transactionSchema = new mongoose.Schema({
     transaction_date: { type: Date, default: Date.now },
     customer_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
     items: [{
-        product_id: { type: String, required: true, ref: 'Product' }, // Referencing the custom product_id or ObjectId? 
+        productId: { type: String, required: true, ref: 'Product' }, // Changed to match Product schema convention 
         // Ideally ref should be ObjectId, but user has a custom product_id. 
         // I will store the custom product_id string here for simplicity as per user table desc, 
         // but lookup might need manual handling if not using ObjectId ref. 
