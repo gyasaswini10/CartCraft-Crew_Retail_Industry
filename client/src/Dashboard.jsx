@@ -505,8 +505,53 @@ const Dashboard = ({ user, handleLogout }) => {
                     {cart.length > 0 && <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>}
                 </div>
             </div>
+
+            <div className="orders-section">
+                <h3>My Orders</h3>
+                <OrdersList user={user} />
+            </div>
         </div>
     );
+
+    const OrdersList = ({ user }) => {
+        const [orders, setOrders] = React.useState([]);
+
+        React.useEffect(() => {
+            const fetchOrders = async () => {
+                const token = localStorage.getItem('token');
+                if (!token) return;
+                try {
+                    const res = await fetch('http://localhost:5000/api/transactions/my-orders', {
+                        headers: { Authorization: `Bearer ${token}` }
+                    });
+                    if (res.ok) {
+                        const data = await res.json();
+                        setOrders(data);
+                    }
+                } catch (err) {
+                    console.error("Failed to fetch orders", err);
+                }
+            };
+            fetchOrders();
+        }, []);
+
+        return (
+            <div className="orders-list">
+                {orders.length === 0 ? <p>No past orders.</p> : (
+                    <ul>
+                        {orders.map(order => (
+                            <li key={order._id} style={{ border: '1px solid #ddd', padding: '10px', margin: '10px 0' }}>
+                                <p><strong>Invoice:</strong> {order.invoice_no}</p>
+                                <p><strong>Date:</strong> {new Date(order.createdAt).toLocaleDateString()}</p>
+                                <p><strong>Total:</strong> ₹{order.total_price}</p>
+                                <p><strong>Items:</strong> {order.items.length}</p>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+        );
+    };
 
     const fillFromCatalog = (e) => {
         const productId = parseInt(e.target.value);

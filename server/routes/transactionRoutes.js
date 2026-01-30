@@ -44,6 +44,16 @@ router.post('/checkout', verifyToken, authorizeRoles('Customer'), async (req, re
     }
 });
 
+// View My Transactions (Customer)
+router.get('/my-orders', verifyToken, authorizeRoles('Customer'), async (req, res) => {
+    try {
+        const transactions = await Transaction.find({ customer_id: req.user.id }).sort({ createdAt: -1 });
+        res.json(transactions);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch your orders' });
+    }
+});
+
 // View All Transactions (Admin, Sales Manager)
 router.get('/', verifyToken, authorizeRoles('Admin', 'Sales Manager'), async (req, res) => {
     try {
