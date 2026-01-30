@@ -296,9 +296,12 @@ p {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: #f8f9fa;
+  /* Light grey background */
+  color: #333;
+  /* Dark text for contrast */
   font-size: 1rem;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .contact-btn {
