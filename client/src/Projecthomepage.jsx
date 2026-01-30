@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { jwtDecode } from 'jwt-decode';
 import Dashboard from './Dashboard';
+import Contact from './Contact';
 import './App.css';
 
 const Projecthomepage = () => {
@@ -204,45 +205,8 @@ const Projecthomepage = () => {
                     </section>
 
                     {/* Contact Section */}
-                    <section className="contact-section" id="contact">
-                        <div className="section-header">
-                            <h2>CONTACT</h2>
-                            <div className="green-line center-line"></div>
-                        </div>
-
-                        <form className="contact-form">
-                            <div className="form-row">
-                                <input type="text" placeholder="Name" />
-                                <input type="text" placeholder="Phone" />
-                                <input type="email" placeholder="Email address" />
-                            </div>
-                            <div className="form-row single-col">
-                                <textarea placeholder="Message" rows="5"></textarea>
-                            </div>
-                            <button type="button" className="contact-btn">CONTACT US</button>
-                        </form>
-
-                        <div className="contact-details-row">
-                            <div className="contact-info">
-                                <h3>Manhattan, New York, NY, United States</h3>
-                                <p className="contact-link">📞 999-7777-000</p>
-                                <p className="contact-link">🕒 Mon-Fri - 08:00-19:00</p>
-                            </div>
-                            <div className="contact-map">
-                                <iframe
-                                    title="Store Location Map"
-                                    width="100%"
-                                    height="100%"
-                                    frameBorder="0"
-                                    style={{ border: 0, borderRadius: '8px' }}
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583086942!2d-74.119763973049!3d40.6976700673559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593a6b8b4b1b%3A0x4b8b8b8b8b8b8b8b!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890"
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade">
-                                </iframe>
-                            </div>
-                        </div>
-                    </section>
+                    {/* Contact Section */}
+                    <Contact />
 
                     {/* Footer */}
                     <footer className="footer">
