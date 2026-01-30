@@ -17,11 +17,21 @@
   padding: 0;
 }
 
+html,
 body {
   font-family: var(--font-main);
   background-color: var(--light-green-bg);
   color: var(--text-dark);
   line-height: 1.5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -1073,6 +1083,24 @@ td {
   min-width: 0;
   /* Critical for text-overflow to work in flex */
   margin-right: 0.5rem;
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--light-green-bg);
+}
+
+.dashboard-header {
+  background-color: var(--dark-green-footer);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* --- RESPONSIVE ADJUSTMENTS --- */
