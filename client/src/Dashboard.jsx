@@ -430,64 +430,77 @@ const Dashboard = ({ user, handleLogout }) => {
                     <div className="product-grid">
                         {products.map(p => (
                             <div key={p._id} className="product-card">
-                                <div style={{ position: 'relative' }}>
-                                    <img src={p.image_url || p.imageUrl || 'https://placehold.co/200'} alt={p.name} style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
-                                </div>
-
-                                <h3 style={{ fontSize: '1.2rem', margin: '0.5rem 0' }}>{p.name || 'Unnamed Product'}</h3>
-
-                                <p className="product-desc" style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
-                                    {p.description ? p.description.substring(0, 80) + '...' : 'No description'}
-                                </p>
-
-                                <div className="product-details" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', background: '#f8f9fa', padding: '10px', borderRadius: '8px', fontSize: '0.8rem', textAlign: 'left' }}>
-                                    <div>
-                                        <strong>Brand:</strong> {p.brand || 'Generic'}
-                                    </div>
-                                    <div>
-                                        <strong>Rating:</strong> {p.rating || 0} ⭐
-                                        <span style={{ fontSize: '0.7rem', color: '#666' }}>({p.reviews?.length || 0} reviews)</span>
-                                    </div>
-
-                                    <div>
-                                        <strong>Stock:</strong> {p.stock !== undefined ? p.stock : 'N/A'} units
-                                    </div>
-                                    <div>
-                                        <strong>Dimensions:</strong> {p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}x${p.dimensions.depth}` : 'N/A'}
-                                    </div>
-
-                                    <div>
-                                        <strong>Weight:</strong> {p.weight || 'N/A'}
-                                    </div>
-                                    <div>
-                                        <strong>Shipping:</strong> {p.shippingInformation || 'Standard'}
-                                    </div>
-
-                                    <div>
-                                        <strong>SKU:</strong> {p.sku || 'N/A'}
-                                    </div>
-                                    <div>
-                                        <strong>Tags:</strong> {p.tags?.join(', ') || 'None'}
-                                    </div>
-
-                                    <div>
-                                        <strong>Min Order:</strong> {p.minimumOrderQuantity || 1}
-                                    </div>
-                                    <div>
-                                        <strong>Policy:</strong> {p.returnPolicy || 'No Returns'}
+                                <div className="product-card-image-container">
+                                    <img
+                                        src={p.image_url || p.imageUrl || 'https://placehold.co/200'}
+                                        alt={p.name}
+                                        className="product-card-img"
+                                        onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
+                                    />
+                                    <div className="item-thumbnail-placeholder" style={{ display: 'none', width: '100%', height: '100%' }}>
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
                                     </div>
                                 </div>
 
-                                <div className="product-price" style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: '1rem 0' }}>
-                                    ${p.price || 0}
-                                </div>
+                                <div className="product-card-content">
+                                    <h3 className="product-card-title" title={p.name}>{p.name || 'Unnamed Product'}</h3>
+                                    <p className="product-card-desc" title={p.description}>
+                                        {p.description || 'No description available'}
+                                    </p>
 
-                                <button
-                                    onClick={() => addToCart(p)}
-                                    style={{ width: '100%', background: '#222', color: 'white', padding: '12px', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
-                                >
-                                    Add to Basket
-                                </button>
+                                    <div className="product-specs-grid">
+                                        <div className="spec-item">
+                                            <span className="spec-label">Brand</span>
+                                            <span className="spec-value" title={p.brand}>{p.brand || 'Generic'}</span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">Rating</span>
+                                            <span className="spec-value">
+                                                {p.rating || 0} ⭐ <span style={{ fontSize: '0.7em', color: '#888' }}>({p.reviews?.length || 0})</span>
+                                            </span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">Stock</span>
+                                            <span className="spec-value">{p.stock !== undefined ? p.stock : 'N/A'}</span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">Dims</span>
+                                            <span className="spec-value" title={p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}x${p.dimensions.depth}` : ''}>
+                                                {p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}` : 'N/A'}
+                                            </span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">Weight</span>
+                                            <span className="spec-value">{p.weight || 'N/A'}</span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">Ship</span>
+                                            <span className="spec-value" title={p.shippingInformation}>{p.shippingInformation || 'Std'}</span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">SKU</span>
+                                            <span className="spec-value" title={p.sku}>{p.sku || 'N/A'}</span>
+                                        </div>
+                                        <div className="spec-item">
+                                            <span className="spec-label">Min Order</span>
+                                            <span className="spec-value">{p.minimumOrderQuantity || 1}</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="product-card-footer">
+                                        <div className="product-card-price">${p.price || 0}</div>
+                                        <button
+                                            onClick={() => addToCart(p)}
+                                            className="add-btn"
+                                        >
+                                            Add to Basket
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -555,13 +568,13 @@ const Dashboard = ({ user, handleLogout }) => {
             {customerView === 'orders' && (
                 <div className="orders-section">
                     <h3>My Orders</h3>
-                    <OrdersList user={user} addToCart={addToCart} />
+                    <OrdersList user={user} addToCart={addToCart} setCustomerView={setCustomerView} />
                 </div>
             )}
         </div>
     );
 
-    const OrdersList = ({ user, addToCart }) => {
+    const OrdersList = ({ user, addToCart, setCustomerView }) => {
         const [orders, setOrders] = React.useState([]);
 
         React.useEffect(() => {
@@ -604,39 +617,53 @@ const Dashboard = ({ user, handleLogout }) => {
                                     </div>
                                 </div>
                                 <div className="order-items-list">
-                                    {order.items.map((item, idx) => (
-                                        <div key={idx} className="order-item">
-                                            {item.product_image ? (
-                                                <img
-                                                    src={item.product_image}
-                                                    alt={item.product_name}
-                                                    className="item-thumbnail"
-                                                    onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
-                                                />
-                                            ) : null}
-                                            {/* Fallback placeholder if image missing or error hidden */}
-                                            <div className="item-thumbnail-placeholder" style={{ display: item.product_image ? 'none' : 'flex' }}>IMG</div>
+                                    {order.items.map((item, idx) => {
+                                        // Lookup product in full catalog if image is missing on transaction item
+                                        const catalogProduct = products.find(p => p.productId === item.productId);
+                                        const displayImage = item.product_image || (catalogProduct ? (catalogProduct.image_url || catalogProduct.imageUrl || catalogProduct.thumbnail) : null);
 
-                                            <div className="item-details">
-                                                <div className="item-name" title={item.product_name}>{item.product_name || item.productId}</div>
-                                                <div className="item-meta">Qty: {item.quantity} × ₹{item.price_at_purchase}</div>
+                                        return (
+                                            <div key={idx} className="order-item">
+                                                {displayImage ? (
+                                                    <img
+                                                        src={displayImage}
+                                                        alt={item.product_name}
+                                                        className="item-thumbnail"
+                                                        onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
+                                                    />
+                                                ) : null}
+                                                {/* Fallback placeholder if image missing or error hidden */}
+                                                <div className="item-thumbnail-placeholder" style={{ display: displayImage ? 'none' : 'flex' }}>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                                    </svg>
+                                                </div>
+
+                                                <div className="item-details">
+                                                    <div className="item-name" title={item.product_name}>{item.product_name || item.productId}</div>
+                                                    <div className="item-meta">Qty: {item.quantity} × ₹{item.price_at_purchase}</div>
+                                                </div>
+                                                <button
+                                                    className="btn-buy-again"
+                                                    onClick={() => {
+                                                        // Map transaction item back to product structure for cart
+                                                        addToCart({
+                                                            productId: item.productId,
+                                                            name: item.product_name,
+                                                            price: item.price_at_purchase,
+                                                            image_url: item.product_image
+                                                        });
+                                                        // Redirect to Shop
+                                                        setCustomerView('shop');
+                                                    }}
+                                                >
+                                                    Buy Again
+                                                </button>
                                             </div>
-                                            <button
-                                                className="btn-buy-again"
-                                                onClick={() => {
-                                                    // Map transaction item back to product structure for cart
-                                                    addToCart({
-                                                        productId: item.productId,
-                                                        name: item.product_name,
-                                                        price: item.price_at_purchase,
-                                                        image_url: item.product_image
-                                                    });
-                                                }}
-                                            >
-                                                Buy Again
-                                            </button>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
                         ))}
@@ -817,10 +844,12 @@ const Dashboard = ({ user, handleLogout }) => {
 
     return (
         <div className="dashboard-container">
-            <header className="dashboard-header">
-                <h1>Retail Dashboard - {user.role}</h1>
-                <button onClick={handleLogout} className="logout-btn">Sign Out</button>
-            </header>
+            {user.role !== 'Customer' && (
+                <header className="dashboard-header">
+                    <h1>Retail Dashboard - {user.role}</h1>
+                    <button onClick={handleLogout} className="logout-btn">Sign Out</button>
+                </header>
+            )}
             <main>
                 {user.role === 'Customer' && renderCustomerView()}
                 {user.role === 'Admin' && renderAdminView()}
