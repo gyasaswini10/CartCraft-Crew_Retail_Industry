@@ -422,6 +422,12 @@ const Dashboard = ({ user, handleLogout }) => {
                     >
                         My Orders
                     </button>
+                    <button
+                        onClick={handleLogout}
+                        style={{ marginLeft: '1rem', color: '#d32f2f', fontWeight: 'bold' }}
+                    >
+                        Sign Out
+                    </button>
                 </nav>
             </header>
 
