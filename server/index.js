@@ -12,6 +12,7 @@ const reportRoutes = require("./routes/reportRoutes");
 const authRoutes = require('./routes/authRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const verifyToken = require('./middleware/authMiddleware');
+const paymentRoutes = require("./routes/paymentRoutes");
 
 
 const messageTemplates = {
@@ -150,6 +151,7 @@ app.use("/api/transactions", transactionRoutes);
 app.use("/api/reports", reportRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/cart', cartRoutes);
+app.use("/api/payment", paymentRoutes);
 
 app.post("/recommendations", async (req, res) => {
   try {

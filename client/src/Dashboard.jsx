@@ -302,23 +302,93 @@ const Dashboard = ({ user, handleLogout }) => {
     const handleCheckout = async () => {
         try {
             const token = localStorage.getItem('token');
-            const items = cart.map(item => ({ productId: item.productId, quantity: item.quantity }));
-            const res = await fetch('http://localhost:5000/api/transactions/checkout', {
+            const totalAmount = cart.reduce((acc, item) => acc + (item.price || 0), 0);
+
+            if (totalAmount === 0) {
+                alert("Cart is empty!");
+                return;
+            }
+
+            // 1. Create Order
+            const orderRes = await fetch('http://localhost:5000/api/payment/createOrder', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`
                 },
-                body: JSON.stringify({ items })
+                body: JSON.stringify({
+                    amount: totalAmount,
+                    currency: "INR"
+                })
             });
-            if (res.ok) {
-                alert('Checkout Successful! Invoice Generated.');
-                setCart([]);
-            } else {
-                alert('Checkout Failed');
-            }
+
+            if (!orderRes.ok) throw new Error("Failed to create order");
+            const orderData = await orderRes.json();
+
+            // 2. Open Razorpay Modal
+            const options = {
+                key: import.meta.env.VITE_RAZORPAY_KEY_ID, // Key from .env file
+                amount: orderData.amount,
+                currency: orderData.currency,
+                name: "Freshmart",
+                description: "Grocery Purchase",
+                order_id: orderData.id,
+                handler: async function (response) {
+                    // 3. Verify Payment
+                    try {
+                        const verifyRes = await fetch('http://localhost:5000/api/payment/verifyPayment', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${token}`
+                            },
+                            body: JSON.stringify({
+                                order_id: orderData.id,
+                                payment_id: response.razorpay_payment_id,
+                                razorpay_signature: response.razorpay_signature
+                            })
+                        });
+
+                        const verifyData = await verifyRes.json();
+                        if (verifyRes.ok) {
+                            alert('Payment Successful!');
+                            // Clear cart and save transaction
+                            await fetch('http://localhost:5000/api/transactions/checkout', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'Authorization': `Bearer ${token}`
+                                },
+                                body: JSON.stringify({ items: cart.map(item => ({ productId: item.productId, quantity: item.quantity })) })
+                            });
+                            setCart([]);
+                        } else {
+                            alert('Payment verification failed');
+                        }
+                    } catch (err) {
+                        console.error(err);
+                        alert('Payment verification error');
+                    }
+                },
+                prefill: {
+                    name: user.username || "Customer",
+                    email: "customer@example.com",
+                    contact: "9999999999"
+                },
+                theme: {
+                    color: "#3399cc"
+                }
+            };
+
+            const rzp1 = new window.Razorpay(options);
+            rzp1.on('payment.failed', function (response) {
+                alert(response.error.description);
+            });
+            rzp1.open();
+
         } catch (err) {
-            console.error(err);
+            console.error("Checkout Error:", err);
+            alert('Checkout initialization failed');
         }
     };
 
