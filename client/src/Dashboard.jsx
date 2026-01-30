@@ -303,7 +303,7 @@ const Dashboard = ({ user, handleLogout }) => {
     const handleCheckout = async () => {
         try {
             const token = localStorage.getItem('token');
-            const totalAmount = cart.reduce((acc, item) => acc + (item.price || 0), 0);
+            const totalAmount = cart.reduce((acc, item) => acc + ((item.price || 0) * (item.quantity || 1)), 0);
 
             if (totalAmount === 0) {
                 alert("Cart is empty!");
@@ -398,7 +398,17 @@ const Dashboard = ({ user, handleLogout }) => {
     const renderCustomerView = () => (
         <div className="dashboard-section">
             <header className="customer-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                <h2>Welcome, {user.username || 'Customer'}</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                    <h2
+                        onClick={() => setCustomerView('shop')}
+                        style={{ margin: 0, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', color: '#4caf50' }}
+                        title="Go to Shop Home"
+                    >
+                        <span style={{ fontSize: '1.8rem' }}>§</span> Freshmart
+                    </h2>
+                    <span style={{ height: '20px', width: '1px', background: '#ccc' }}></span>
+                    <span style={{ fontSize: '1.1rem', color: '#555' }}>Hello, {user.username || 'Customer'}</span>
+                </div>
                 <nav className="customer-nav">
                     <button
                         onClick={() => setCustomerView('shop')}
@@ -512,14 +522,30 @@ const Dashboard = ({ user, handleLogout }) => {
 
                         <h3>Your Basket</h3>
                         {cart.map((item, idx) => (
-                            <div key={idx} className="cart-item">
-                                <span>{item.name}</span>
-                                <span>${item.price}</span>
-                                <button onClick={() => removeFromCart(item.productId)}>X</button>
+                            <div key={idx} className="cart-item" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', marginBottom: '5px' }}>
+                                    <span style={{ fontWeight: 'bold' }}>{item.name}</span>
+                                    <span>₹{(item.price * (item.quantity || 1)).toFixed(2)}</span>
+                                </div>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', fontSize: '0.9rem' }}>
+
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                                        <span>Qty:</span>
+                                        <button
+                                            onClick={() => removeFromCart(item.productId)}
+                                            style={{ padding: '0px 6px', background: '#ddd', border: 'none', borderRadius: '3px', cursor: 'pointer', fontWeight: 'bold' }}
+                                        >-</button>
+                                        <span style={{ fontWeight: 'bold' }}>{item.quantity || 1}</span>
+                                        <button
+                                            onClick={() => addToCart(item)}
+                                            style={{ padding: '0px 6px', background: '#ddd', border: 'none', borderRadius: '3px', cursor: 'pointer', fontWeight: 'bold' }}
+                                        >+</button>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                         <div className="cart-total">
-                            Total: ${cart.reduce((acc, item) => acc + (item.price || 0), 0)}
+                            Total: ₹{cart.reduce((acc, item) => acc + ((item.price || 0) * (item.quantity || 1)), 0).toFixed(2)}
                         </div>
                         {cart.length > 0 && <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>}
                     </div>
@@ -529,13 +555,13 @@ const Dashboard = ({ user, handleLogout }) => {
             {customerView === 'orders' && (
                 <div className="orders-section">
                     <h3>My Orders</h3>
-                    <OrdersList user={user} />
+                    <OrdersList user={user} addToCart={addToCart} />
                 </div>
             )}
         </div>
     );
 
-    const OrdersList = ({ user }) => {
+    const OrdersList = ({ user, addToCart }) => {
         const [orders, setOrders] = React.useState([]);
 
         React.useEffect(() => {
@@ -560,40 +586,61 @@ const Dashboard = ({ user, handleLogout }) => {
         return (
             <div className="orders-list">
                 {orders.length === 0 ? <p>No past orders.</p> : (
-                    <ul style={{ listStyle: 'none', padding: 0 }}>
+                    <div className="orders-list-grid">
                         {orders.map(order => (
-                            <li key={order._id} style={{ border: '1px solid #ddd', padding: '15px', marginBottom: '15px', borderRadius: '8px', backgroundColor: '#fff' }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '5px' }}>
-                                    <strong>{order.invoice_no}</strong>
-                                    <span style={{ color: '#666' }}>{new Date(order.transaction_date).toLocaleDateString()}</span>
+                            <div key={order._id} className="order-card">
+                                <div className="order-header">
+                                    <span className="order-invoice">{order.invoice_no}</span>
+                                    <span className="order-date">{new Date(order.transaction_date).toLocaleDateString()}</span>
                                 </div>
-                                <div style={{ marginBottom: '10px' }}>
-                                    <p><strong>Total:</strong> ₹{order.total_price}</p>
-                                    <p><strong>Items:</strong> {order.items.length}</p>
+                                <div className="order-summary">
+                                    <div className="order-metric">
+                                        <span className="metric-label">Total Amount</span>
+                                        <span className="metric-value">₹{order.total_price}</span>
+                                    </div>
+                                    <div className="order-metric" style={{ alignItems: 'flex-end' }}>
+                                        <span className="metric-label">Items Count</span>
+                                        <span className="metric-value">{order.items.length}</span>
+                                    </div>
                                 </div>
-                                <div style={{ fontSize: '0.9em', color: '#555' }}>
+                                <div className="order-items-list">
                                     {order.items.map((item, idx) => (
-                                        <div key={idx} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', background: '#f9f9f9', padding: '8px', borderRadius: '4px' }}>
+                                        <div key={idx} className="order-item">
                                             {item.product_image ? (
                                                 <img
                                                     src={item.product_image}
                                                     alt={item.product_name}
-                                                    style={{ width: '40px', height: '40px', objectFit: 'cover', marginRight: '10px', borderRadius: '4px' }}
-                                                    onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/40x40?text=IMG'; }}
+                                                    className="item-thumbnail"
+                                                    onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }}
                                                 />
-                                            ) : (
-                                                <div style={{ width: '40px', height: '40px', marginRight: '10px', borderRadius: '4px', background: '#ddd', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', color: '#555' }}>IMG</div>
-                                            )}
-                                            <div>
-                                                <div style={{ fontWeight: 'bold' }}>{item.product_name || item.productId}</div>
-                                                <div>Qty: {item.quantity} x ₹{item.price_at_purchase}</div>
+                                            ) : null}
+                                            {/* Fallback placeholder if image missing or error hidden */}
+                                            <div className="item-thumbnail-placeholder" style={{ display: item.product_image ? 'none' : 'flex' }}>IMG</div>
+
+                                            <div className="item-details">
+                                                <div className="item-name" title={item.product_name}>{item.product_name || item.productId}</div>
+                                                <div className="item-meta">Qty: {item.quantity} × ₹{item.price_at_purchase}</div>
                                             </div>
+                                            <button
+                                                className="btn-buy-again"
+                                                onClick={() => {
+                                                    // Map transaction item back to product structure for cart
+                                                    addToCart({
+                                                        productId: item.productId,
+                                                        name: item.product_name,
+                                                        price: item.price_at_purchase,
+                                                        image_url: item.product_image
+                                                    });
+                                                }}
+                                            >
+                                                Buy Again
+                                            </button>
                                         </div>
                                     ))}
                                 </div>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 )}
             </div>
         );

@@ -66,7 +66,7 @@ router.post('/add', async (req, res) => {
     }
 });
 
-// REMOVE from Basket
+// REMOVE/DECREMENT from Basket
 router.post('/remove', async (req, res) => {
     try {
         const { customerId, productId } = req.body;
@@ -76,8 +76,20 @@ router.post('/remove', async (req, res) => {
             return res.status(404).json({ error: 'Customer not found' });
         }
 
-        // Filter out the item
-        customer.basket = customer.basket.filter(item => item.productId !== productId);
+        const basket = customer.basket || [];
+        const itemIndex = basket.findIndex(item => item.productId === productId);
+
+        if (itemIndex > -1) {
+            if (basket[itemIndex].quantity > 1) {
+                // Decrement
+                basket[itemIndex].quantity -= 1;
+            } else {
+                // Remove if quantity is 1 or less
+                basket.splice(itemIndex, 1);
+            }
+        }
+
+        customer.basket = basket;
         await customer.save();
 
         res.json(customer.basket);

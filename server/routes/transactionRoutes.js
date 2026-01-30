@@ -25,7 +25,7 @@ router.post('/checkout', verifyToken, authorizeRoles('Customer'), async (req, re
             processedItems.push({
                 productId: item.productId,
                 product_name: product.name,
-                product_image: product.imageUrl,
+                product_image: product.imageUrl || item.image_url || item.imageUrl,
                 quantity: item.quantity,
                 price_at_purchase: product.price
             });

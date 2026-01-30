@@ -147,8 +147,8 @@ const app = express();
 app.use(cors({
   origin: '*', // Allow all origins (or specify your frontend URL)
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'x-razorpay-signature'],
-  exposedHeaders: ['x-rtb-fingerprint-id'] // Attempt to fix the user's specific warning
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-razorpay-signature', 'x-razorpay-payment-id'],
+  exposedHeaders: ['x-rtb-fingerprint-id', 'x-razorpay-payment-id', 'x-razorpay-signature'] // Allow client to read these if needed
 }));
 app.use(express.json());
 app.use("/api/products", productRoutes);
