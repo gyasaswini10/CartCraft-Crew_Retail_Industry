@@ -144,7 +144,12 @@ function buildExplanation({ type, customer, product, cartCategories, ageGroup })
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow all origins (or specify your frontend URL)
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-razorpay-signature'],
+  exposedHeaders: ['x-rtb-fingerprint-id'] // Attempt to fix the user's specific warning
+}));
 app.use(express.json());
 app.use("/api/products", productRoutes);
 app.use("/api/transactions", transactionRoutes);

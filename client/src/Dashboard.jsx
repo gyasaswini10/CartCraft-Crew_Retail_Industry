@@ -6,7 +6,9 @@ const Dashboard = ({ user, handleLogout }) => {
     const [analytics, setAnalytics] = useState(null);
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    const [view, setView] = useState('home'); // home, reports, transactions, addProduct
+    const [view, setView] = React.useState('home'); // admin views
+    const [customerView, setCustomerView] = React.useState('shop'); // customer views: 'shop' | 'orders'
+    // home, reports, transactions, addProduct
     const [reports, setReports] = useState(null);
     const [transactions, setTransactions] = useState([]);
     const [importStatus, setImportStatus] = useState('');
@@ -239,10 +241,10 @@ const Dashboard = ({ user, handleLogout }) => {
                 body: JSON.stringify({
                     customerId: user._id || user.id,
                     product: {
-                        productId: product.productId,
-                        name: product.name,
+                        productId: product.productId || `P${String(product.id).padStart(3, '0')}`, // Use product.id from catalog if productId is missing
+                        name: product.name || product.title, // Use product.title from catalog if name is missing
                         price: product.price,
-                        imageUrl: product.image_url || product.imageUrl
+                        imageUrl: product.image_url || product.imageUrl || product.thumbnail
                     }
                 })
             });
@@ -255,15 +257,14 @@ const Dashboard = ({ user, handleLogout }) => {
         }
     };
 
-    const removeFromCart = async (index) => {
-        const itemToRemove = cart[index];
+    const removeFromCart = async (productId) => {
         try {
             const res = await fetch('http://localhost:5000/api/cart/remove', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     customerId: user._id || user.id,
-                    productId: itemToRemove.productId
+                    productId: productId
                 })
             });
             if (res.ok) {
@@ -396,120 +397,141 @@ const Dashboard = ({ user, handleLogout }) => {
 
     const renderCustomerView = () => (
         <div className="dashboard-section">
-            <h2>Welcome, {user.username || 'Customer'}</h2>
-            <div className="customer-layout">
-                <div className="product-grid">
-                    {products.map(p => (
-                        <div key={p._id} className="product-card">
-                            <div style={{ position: 'relative' }}>
-                                <img src={p.image_url || p.imageUrl || 'https://placehold.co/200'} alt={p.name} style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
+            <header className="customer-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                <h2>Welcome, {user.username || 'Customer'}</h2>
+                <nav className="customer-nav">
+                    <button
+                        onClick={() => setCustomerView('shop')}
+                        style={{ marginRight: '1rem', fontWeight: customerView === 'shop' ? 'bold' : 'normal' }}
+                    >
+                        Shop
+                    </button>
+                    <button
+                        onClick={() => setCustomerView('orders')}
+                        style={{ fontWeight: customerView === 'orders' ? 'bold' : 'normal' }}
+                    >
+                        My Orders
+                    </button>
+                </nav>
+            </header>
+
+            {customerView === 'shop' && (
+                <div className="customer-layout">
+                    <div className="product-grid">
+                        {products.map(p => (
+                            <div key={p._id} className="product-card">
+                                <div style={{ position: 'relative' }}>
+                                    <img src={p.image_url || p.imageUrl || 'https://placehold.co/200'} alt={p.name} style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
+                                </div>
+
+                                <h3 style={{ fontSize: '1.2rem', margin: '0.5rem 0' }}>{p.name || 'Unnamed Product'}</h3>
+
+                                <p className="product-desc" style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
+                                    {p.description ? p.description.substring(0, 80) + '...' : 'No description'}
+                                </p>
+
+                                <div className="product-details" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', background: '#f8f9fa', padding: '10px', borderRadius: '8px', fontSize: '0.8rem', textAlign: 'left' }}>
+                                    <div>
+                                        <strong>Brand:</strong> {p.brand || 'Generic'}
+                                    </div>
+                                    <div>
+                                        <strong>Rating:</strong> {p.rating || 0} ⭐
+                                        <span style={{ fontSize: '0.7rem', color: '#666' }}>({p.reviews?.length || 0} reviews)</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>Stock:</strong> {p.stock !== undefined ? p.stock : 'N/A'} units
+                                    </div>
+                                    <div>
+                                        <strong>Dimensions:</strong> {p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}x${p.dimensions.depth}` : 'N/A'}
+                                    </div>
+
+                                    <div>
+                                        <strong>Weight:</strong> {p.weight || 'N/A'}
+                                    </div>
+                                    <div>
+                                        <strong>Shipping:</strong> {p.shippingInformation || 'Standard'}
+                                    </div>
+
+                                    <div>
+                                        <strong>SKU:</strong> {p.sku || 'N/A'}
+                                    </div>
+                                    <div>
+                                        <strong>Tags:</strong> {p.tags?.join(', ') || 'None'}
+                                    </div>
+
+                                    <div>
+                                        <strong>Min Order:</strong> {p.minimumOrderQuantity || 1}
+                                    </div>
+                                    <div>
+                                        <strong>Policy:</strong> {p.returnPolicy || 'No Returns'}
+                                    </div>
+                                </div>
+
+                                <div className="product-price" style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: '1rem 0' }}>
+                                    ${p.price || 0}
+                                </div>
+
+                                <button
+                                    onClick={() => addToCart(p)}
+                                    style={{ width: '100%', background: '#222', color: 'white', padding: '12px', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
+                                >
+                                    Add to Basket
+                                </button>
                             </div>
-
-                            <h3 style={{ fontSize: '1.2rem', margin: '0.5rem 0' }}>{p.name || 'Unnamed Product'}</h3>
-
-                            <p className="product-desc" style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
-                                {p.description ? p.description.substring(0, 80) + '...' : 'No description'}
-                            </p>
-
-                            <div className="product-details" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', background: '#f8f9fa', padding: '10px', borderRadius: '8px', fontSize: '0.8rem', textAlign: 'left' }}>
-                                <div>
-                                    <strong>Brand:</strong> {p.brand || 'Generic'}
-                                </div>
-                                <div>
-                                    <strong>Rating:</strong> {p.rating || 0} ⭐
-                                    <span style={{ fontSize: '0.7rem', color: '#666' }}>({p.reviews?.length || 0} reviews)</span>
-                                </div>
-
-                                <div>
-                                    <strong>Stock:</strong> {p.stock !== undefined ? p.stock : 'N/A'} units
-                                </div>
-                                <div>
-                                    <strong>Dimensions:</strong> {p.dimensions ? `${p.dimensions.width}x${p.dimensions.height}x${p.dimensions.depth}` : 'N/A'}
-                                </div>
-
-                                <div>
-                                    <strong>Weight:</strong> {p.weight || 'N/A'}
-                                </div>
-                                <div>
-                                    <strong>Shipping:</strong> {p.shippingInformation || 'Standard'}
-                                </div>
-
-                                <div>
-                                    <strong>SKU:</strong> {p.sku || 'N/A'}
-                                </div>
-                                <div>
-                                    <strong>Tags:</strong> {p.tags?.join(', ') || 'None'}
-                                </div>
-
-                                <div>
-                                    <strong>Min Order:</strong> {p.minimumOrderQuantity || 1}
-                                </div>
-                                <div>
-                                    <strong>Policy:</strong> {p.returnPolicy || 'No Returns'}
-                                </div>
-                            </div>
-
-                            <div className="product-price" style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: '1rem 0' }}>
-                                ${p.price || 0}
-                            </div>
-
-                            <button
-                                onClick={() => addToCart(p)}
-                                style={{ width: '100%', background: '#222', color: 'white', padding: '12px', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
-                            >
-                                Add to Basket
-                            </button>
-                        </div>
-                    ))}
-                </div>
-                <div className="cart-sidebar">
-                    {/* --- START AI RECOMMENDATIONS --- */}
-                    {aiRecommendations.length > 0 && (
-                        <div className="ai-nudge-box" style={{ background: '#f0f7ff', border: '1px dashed #007bff', padding: '10px', borderRadius: '8px', marginBottom: '15px' }}>
-                            <h4 style={{ margin: '0 0 5px 0' }}>✨ Just for You</h4>
-                            {aiRecommendations.map((rec, i) => (
-                                <div key={i} style={{ marginBottom: '10px', borderBottom: '1px solid #d0e4ff', paddingBottom: '5px' }}>
-                                    <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: '#0056b3', margin: '0 0 5px 0' }}>"{rec.message}"</p>
-                                    <button
-                                        style={{ fontSize: '0.75rem', padding: '2px 8px', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
-                                        onClick={() => {
-                                            // Matching frontend 'productId' with backend 'productId'
-                                            const product = products.find(p => p.productId === rec.productId);
-                                            if (product) addToCart(product);
-                                        }}
-                                    >
-                                        + Add {rec.name}
-                                    </button>
-                                </div>
-                            ))}
-                            {analytics && (
-                                <div style={{ fontSize: '0.7rem', color: '#666', marginTop: '5px' }}>
-                                    <strong>Basket Growth: {analytics.projectedGrowth}</strong>
-                                </div>
-                            )}
-                        </div>
-                    )}
-                    {/* --- END AI RECOMMENDATIONS --- */}
-
-                    <h3>Your Basket</h3>
-                    {cart.map((item, idx) => (
-                        <div key={idx} className="cart-item">
-                            <span>{item.name}</span>
-                            <span>${item.price}</span>
-                            <button onClick={() => removeFromCart(idx)}>X</button>
-                        </div>
-                    ))}
-                    <div className="cart-total">
-                        Total: ${cart.reduce((acc, item) => acc + (item.price || 0), 0)}
+                        ))}
                     </div>
-                    {cart.length > 0 && <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>}
-                </div>
-            </div>
+                    <div className="cart-sidebar">
+                        {/* --- START AI RECOMMENDATIONS --- */}
+                        {aiRecommendations.length > 0 && (
+                            <div className="ai-nudge-box" style={{ background: '#f0f7ff', border: '1px dashed #007bff', padding: '10px', borderRadius: '8px', marginBottom: '15px' }}>
+                                <h4 style={{ margin: '0 0 5px 0' }}>✨ Just for You</h4>
+                                {aiRecommendations.map((rec, i) => (
+                                    <div key={i} style={{ marginBottom: '10px', borderBottom: '1px solid #d0e4ff', paddingBottom: '5px' }}>
+                                        <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: '#0056b3', margin: '0 0 5px 0' }}>"{rec.message}"</p>
+                                        <button
+                                            style={{ fontSize: '0.75rem', padding: '2px 8px', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+                                            onClick={() => {
+                                                // Matching frontend 'productId' with backend 'productId'
+                                                const product = products.find(p => p.productId === rec.productId);
+                                                if (product) addToCart(product);
+                                            }}
+                                        >
+                                            + Add {rec.name}
+                                        </button>
+                                    </div>
+                                ))}
+                                {analytics && (
+                                    <div style={{ fontSize: '0.7rem', color: '#666', marginTop: '5px' }}>
+                                        <strong>Basket Growth: {analytics.projectedGrowth}</strong>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        {/* --- END AI RECOMMENDATIONS --- */}
 
-            <div className="orders-section">
-                <h3>My Orders</h3>
-                <OrdersList user={user} />
-            </div>
+                        <h3>Your Basket</h3>
+                        {cart.map((item, idx) => (
+                            <div key={idx} className="cart-item">
+                                <span>{item.name}</span>
+                                <span>${item.price}</span>
+                                <button onClick={() => removeFromCart(item.productId)}>X</button>
+                            </div>
+                        ))}
+                        <div className="cart-total">
+                            Total: ${cart.reduce((acc, item) => acc + (item.price || 0), 0)}
+                        </div>
+                        {cart.length > 0 && <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>}
+                    </div>
+                </div>
+            )}
+
+            {customerView === 'orders' && (
+                <div className="orders-section">
+                    <h3>My Orders</h3>
+                    <OrdersList user={user} />
+                </div>
+            )}
         </div>
     );
 
@@ -538,13 +560,37 @@ const Dashboard = ({ user, handleLogout }) => {
         return (
             <div className="orders-list">
                 {orders.length === 0 ? <p>No past orders.</p> : (
-                    <ul>
+                    <ul style={{ listStyle: 'none', padding: 0 }}>
                         {orders.map(order => (
-                            <li key={order._id} style={{ border: '1px solid #ddd', padding: '10px', margin: '10px 0' }}>
-                                <p><strong>Invoice:</strong> {order.invoice_no}</p>
-                                <p><strong>Date:</strong> {new Date(order.createdAt).toLocaleDateString()}</p>
-                                <p><strong>Total:</strong> ₹{order.total_price}</p>
-                                <p><strong>Items:</strong> {order.items.length}</p>
+                            <li key={order._id} style={{ border: '1px solid #ddd', padding: '15px', marginBottom: '15px', borderRadius: '8px', backgroundColor: '#fff' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', borderBottom: '1px solid #eee', paddingBottom: '5px' }}>
+                                    <strong>{order.invoice_no}</strong>
+                                    <span style={{ color: '#666' }}>{new Date(order.transaction_date).toLocaleDateString()}</span>
+                                </div>
+                                <div style={{ marginBottom: '10px' }}>
+                                    <p><strong>Total:</strong> ₹{order.total_price}</p>
+                                    <p><strong>Items:</strong> {order.items.length}</p>
+                                </div>
+                                <div style={{ fontSize: '0.9em', color: '#555' }}>
+                                    {order.items.map((item, idx) => (
+                                        <div key={idx} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', background: '#f9f9f9', padding: '8px', borderRadius: '4px' }}>
+                                            {item.product_image ? (
+                                                <img
+                                                    src={item.product_image}
+                                                    alt={item.product_name}
+                                                    style={{ width: '40px', height: '40px', objectFit: 'cover', marginRight: '10px', borderRadius: '4px' }}
+                                                    onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/40x40?text=IMG'; }}
+                                                />
+                                            ) : (
+                                                <div style={{ width: '40px', height: '40px', marginRight: '10px', borderRadius: '4px', background: '#ddd', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', color: '#555' }}>IMG</div>
+                                            )}
+                                            <div>
+                                                <div style={{ fontWeight: 'bold' }}>{item.product_name || item.productId}</div>
+                                                <div>Qty: {item.quantity} x ₹{item.price_at_purchase}</div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
                             </li>
                         ))}
                     </ul>

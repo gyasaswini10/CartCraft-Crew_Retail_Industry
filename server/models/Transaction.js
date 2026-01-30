@@ -10,6 +10,8 @@ const transactionSchema = new mongoose.Schema({
         // I will store the custom product_id string here for simplicity as per user table desc, 
         // but lookup might need manual handling if not using ObjectId ref. 
         // Actually, let's store the product details snapshot or just the ID.
+        product_name: { type: String }, // Store name at purchase
+        product_image: { type: String }, // Store image at purchase
         quantity: { type: Number, required: true },
         price_at_purchase: { type: Number, required: true } // Good practice to store price at time of sale
     }],

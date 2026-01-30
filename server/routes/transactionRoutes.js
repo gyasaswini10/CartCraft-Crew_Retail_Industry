@@ -24,6 +24,8 @@ router.post('/checkout', verifyToken, authorizeRoles('Customer'), async (req, re
             total_price += product.price * item.quantity;
             processedItems.push({
                 productId: item.productId,
+                product_name: product.name,
+                product_image: product.imageUrl,
                 quantity: item.quantity,
                 price_at_purchase: product.price
             });

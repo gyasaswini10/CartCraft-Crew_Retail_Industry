@@ -10,7 +10,8 @@ router.get('/:customerId', async (req, res) => {
         const customer = await Customer.findOne({ customerId });
 
         if (!customer) {
-            return res.status(404).json({ error: 'Customer not found' });
+            // New customer likely doesn't have a profile yet, return empty cart
+            return res.json([]);
         }
 
         res.json(customer.basket || []);
