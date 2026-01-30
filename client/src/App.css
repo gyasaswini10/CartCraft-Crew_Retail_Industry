@@ -581,7 +581,7 @@ footer {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  max-height: 85vh;
+  /* max-height removed to allow natural page scrolling */
 }
 
 .product-grid {
@@ -590,7 +590,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   /* Wider cards */
   gap: 20px;
-  overflow-y: auto;
+  /* overflow-y removed */
   padding-right: 10px;
   padding-bottom: 2rem;
 }
