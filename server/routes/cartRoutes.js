@@ -1,0 +1,127 @@
+const express = require('express');
+const router = express.Router();
+const Customer = require('../models/Customer');
+const Product = require('../models/Product');
+
+// GET Basket
+router.get('/:customerId', async (req, res) => {
+    try {
+        const { customerId } = req.params;
+        const customer = await Customer.findOne({ customerId });
+
+        if (!customer) {
+            // New customer likely doesn't have a profile yet, return empty cart
+            return res.json([]);
+        }
+
+        res.json(customer.basket || []);
+    } catch (err) {
+        console.error('Get Cart Error:', err);
+        res.status(500).json({ error: 'Failed to retrieve cart' });
+    }
+});
+
+// ADD to Basket
+router.post('/add', async (req, res) => {
+    try {
+        const { customerId, product } = req.body;
+        console.log('Add Cart Request:', { customerId, product: product?.name });
+
+        if (!customerId) {
+            return res.status(400).json({ error: "Missing customerId" });
+        }
+
+        let customer = await Customer.findOne({ customerId });
+        if (!customer) {
+            console.log(`Creating new customer profile for ID: ${customerId}`);
+            customer = new Customer({ customerId, name: "New Customer", basket: [] });
+        }
+
+        // 🛑 STOCK CHECK
+        const dbProduct = await Product.findOne({ productId: product.productId });
+        if (!dbProduct) {
+            return res.status(404).json({ error: "Product currently unavailable" });
+        }
+
+        const basket = customer.basket || [];
+        const existingItemIndex = basket.findIndex(item => item.productId === product.productId);
+        let newQuantity = 1;
+
+        if (existingItemIndex > -1) {
+            newQuantity = basket[existingItemIndex].quantity + 1;
+        }
+
+        if (dbProduct.stock < newQuantity) {
+            return res.status(400).json({ error: `Only ${dbProduct.stock} left in stock!` });
+        }
+
+        if (existingItemIndex > -1) {
+            basket[existingItemIndex].quantity = newQuantity;
+        } else {
+            basket.push({
+                productId: product.productId,
+                name: product.name,
+                price: product.price,
+                image_url: product.image_url || product.imageUrl,
+                quantity: 1
+            });
+        }
+
+        customer.basket = basket;
+        await customer.save();
+
+        res.json(customer.basket);
+    } catch (err) {
+        console.error('Add to Cart Error:', err);
+        // Log to file for easier debugging
+        const fs = require('fs');
+        fs.appendFileSync('server_error.log', `${new Date().toISOString()} - Add Cart Error: ${err.message}\n${err.stack}\n\n`);
+        res.status(500).json({ error: 'Failed to add item to cart', details: err.message });
+    }
+});
+
+// REMOVE/DECREMENT from Basket
+router.post('/remove', async (req, res) => {
+    try {
+        const { customerId, productId } = req.body;
+
+        const customer = await Customer.findOne({ customerId });
+        if (!customer) {
+            return res.status(404).json({ error: 'Customer not found' });
+        }
+
+        const basket = customer.basket || [];
+        const itemIndex = basket.findIndex(item => item.productId === productId);
+
+        if (itemIndex > -1) {
+            if (basket[itemIndex].quantity > 1) {
+                // Decrement
+                basket[itemIndex].quantity -= 1;
+            } else {
+                // Remove if quantity is 1 or less
+                basket.splice(itemIndex, 1);
+            }
+        }
+
+        customer.basket = basket;
+        await customer.save();
+
+        res.json(customer.basket);
+    } catch (err) {
+        console.error('Remove from Cart Error:', err);
+        res.status(500).json({ error: 'Failed to remove item from cart' });
+    }
+});
+
+// SYNC/UPDATE Basket (Full override - optional usage)
+router.post('/sync', async (req, res) => {
+    try {
+        const { customerId, cart } = req.body;
+        await Customer.updateOne({ customerId }, { $set: { basket: cart } });
+        res.json({ message: 'Cart synced' });
+    } catch (err) {
+        res.status(500).json({ error: 'Sync failed' });
+    }
+});
+
+module.exports = router;

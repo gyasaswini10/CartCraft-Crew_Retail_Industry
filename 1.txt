@@ -1,0 +1,15 @@
+Actively adds items to cart context
+
+Uses cross-sell logic
+
+Avoids recommendation fatigue
+
+Learns preferences to increase relevance
+
+Explains why the user should add more items
+
+This directly targets:
+
+“customer adds 1–2 more items per transaction”
+
+Which mathematically → higher avg basket size.

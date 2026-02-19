@@ -1,0 +1,3932 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Perly",
+            "description": "Perly (100 g). Trusted quality from Perly.",
+            "category": "dairy",
+            "price": 17.55,
+            "discountPercentage": 7.13,
+            "rating": 4.95,
+            "stock": 125,
+            "tags": [
+                "dairy",
+                "milk"
+            ],
+            "brand": "Perly",
+            "sku": "DAI-MIL-001",
+            "weight": 3,
+            "dimensions": {
+                "width": 8.21,
+                "height": 17.66,
+                "depth": 5.73
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242100992"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/0992/front_fr.172.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/0992/front_fr.172.400.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Lait",
+            "description": "Lait (450 ml). Trusted quality from Jaouda.",
+            "category": "dairy",
+            "price": 9.73,
+            "discountPercentage": 7.0,
+            "rating": 3.51,
+            "stock": 40,
+            "tags": [
+                "dairy",
+                "milk"
+            ],
+            "brand": "Jaouda",
+            "sku": "DAI-MIL-002",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.18,
+                "height": 16.64,
+                "depth": 7.27
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111266962187"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/126/696/2187/front_fr.56.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/126/696/2187/front_fr.56.400.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Fromage Blanc Nature",
+            "description": "Fromage Blanc Nature (1 kg). Trusted quality from Milky Food Professional.",
+            "category": "dairy",
+            "price": 14.0,
+            "discountPercentage": 14.94,
+            "rating": 3.54,
+            "stock": 80,
+            "tags": [
+                "dairy",
+                "milk"
+            ],
+            "brand": "Milky Food Professional",
+            "sku": "DAI-MIL-003",
+            "weight": 4,
+            "dimensions": {
+                "width": 14.71,
+                "height": 16.87,
+                "depth": 6.57
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111246721261"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/672/1261/front_fr.94.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/672/1261/front_fr.94.400.jpg"
+        },
+        {
+            "id": 4,
+            "title": "uht jaouda 1L",
+            "description": "uht jaouda 1L (1L). Trusted quality from Jaouda.",
+            "category": "dairy",
+            "price": 3.53,
+            "discountPercentage": 7.08,
+            "rating": 3.18,
+            "stock": 26,
+            "tags": [
+                "dairy",
+                "milk"
+            ],
+            "brand": "Jaouda",
+            "sku": "DAI-MIL-004",
+            "weight": 4,
+            "dimensions": {
+                "width": 5.52,
+                "height": 18.58,
+                "depth": 7.64
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242101180"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/1180/front_fr.79.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/1180/front_fr.79.400.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Jben",
+            "description": "Jben (160g). Trusted quality from Jaouda.",
+            "category": "dairy",
+            "price": 10.91,
+            "discountPercentage": 6.95,
+            "rating": 3.2,
+            "stock": 66,
+            "tags": [
+                "dairy",
+                "milk"
+            ],
+            "brand": "Jaouda",
+            "sku": "DAI-MIL-005",
+            "weight": 3,
+            "dimensions": {
+                "width": 9.15,
+                "height": 9.6,
+                "depth": 6.45
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242106949"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/6949/front_fr.77.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/6949/front_fr.77.400.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Cheddar",
+            "description": "Cheddar (24 336g). Trusted quality from la Hollandaise.",
+            "category": "dairy",
+            "price": 16.93,
+            "discountPercentage": 9.03,
+            "rating": 4.37,
+            "stock": 24,
+            "tags": [
+                "dairy",
+                "cheese"
+            ],
+            "brand": "la Hollandaise",
+            "sku": "DAI-CHE-006",
+            "weight": 3,
+            "dimensions": {
+                "width": 10.1,
+                "height": 12.37,
+                "depth": 5.25
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111203006653"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/120/300/6653/front_ar.14.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/120/300/6653/front_ar.14.400.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Cream cheese",
+            "description": "Cream cheese (1 kg). Trusted quality from Original.",
+            "category": "dairy",
+            "price": 8.96,
+            "discountPercentage": 10.63,
+            "rating": 4.39,
+            "stock": 141,
+            "tags": [
+                "dairy",
+                "cheese"
+            ],
+            "brand": "Original",
+            "sku": "DAI-CHE-007",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.87,
+                "height": 9.75,
+                "depth": 6.26
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111246721278"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/672/1278/front_en.4.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/672/1278/front_en.4.400.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Spreadable Slightly Salted",
+            "description": "Spreadable Slightly Salted (400g). Trusted quality from Lurpak.",
+            "category": "dairy",
+            "price": 2.44,
+            "discountPercentage": 9.17,
+            "rating": 3.41,
+            "stock": 45,
+            "tags": [
+                "dairy",
+                "butter"
+            ],
+            "brand": "Lurpak",
+            "sku": "DAI-BUT-008",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.31,
+                "height": 15.4,
+                "depth": 6.04
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5740900404465"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/574/090/040/4465/front_en.30.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/574/090/040/4465/front_en.30.400.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Familia 200g",
+            "description": "Familia 200g (1920 unit (8dh)). Trusted quality from Generic.",
+            "category": "dairy",
+            "price": 2.24,
+            "discountPercentage": 10.34,
+            "rating": 3.59,
+            "stock": 12,
+            "tags": [
+                "dairy",
+                "butter"
+            ],
+            "brand": "Generic",
+            "sku": "DAI-BUT-009",
+            "weight": 3,
+            "dimensions": {
+                "width": 12.75,
+                "height": 12.59,
+                "depth": 6.4
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111037000599"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/103/700/0599/front_fr.31.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/103/700/0599/front_fr.31.400.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Fourr\u00e9s Chocolat Noir",
+            "description": "Fourr\u00e9s Chocolat Noir (225 g). Trusted quality from Bjorg.",
+            "category": "dairy",
+            "price": 6.86,
+            "discountPercentage": 9.61,
+            "rating": 4.87,
+            "stock": 114,
+            "tags": [
+                "dairy",
+                "butter"
+            ],
+            "brand": "Bjorg",
+            "sku": "DAI-BUT-010",
+            "weight": 4,
+            "dimensions": {
+                "width": 12.14,
+                "height": 11.72,
+                "depth": 7.91
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3229820100234"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/322/982/010/0234/front_fr.246.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/322/982/010/0234/front_fr.246.400.jpg"
+        },
+        {
+            "id": 11,
+            "title": "Extra dark 74% Cocoa",
+            "description": "Extra dark 74% Cocoa (100 gram). Trusted quality from fin CARR\u00c9.",
+            "category": "dairy",
+            "price": 6.99,
+            "discountPercentage": 7.58,
+            "rating": 4.33,
+            "stock": 50,
+            "tags": [
+                "dairy",
+                "butter"
+            ],
+            "brand": "fin CARR\u00c9",
+            "sku": "DAI-BUT-011",
+            "weight": 2,
+            "dimensions": {
+                "width": 14.42,
+                "height": 10.83,
+                "depth": 9.75
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "20022464"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/002/002/2464/front_en.301.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/002/002/2464/front_en.301.400.jpg"
+        },
+        {
+            "id": 12,
+            "title": "Assil vanille",
+            "description": "Assil vanille (110 g). Trusted quality from Danone.",
+            "category": "dairy",
+            "price": 10.0,
+            "discountPercentage": 9.77,
+            "rating": 4.26,
+            "stock": 30,
+            "tags": [
+                "dairy",
+                "yogurt"
+            ],
+            "brand": "Danone",
+            "sku": "DAI-YOG-012",
+            "weight": 3,
+            "dimensions": {
+                "width": 11.06,
+                "height": 5.3,
+                "depth": 6.15
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111032001003"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/103/200/1003/front_en.61.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/103/200/1003/front_en.61.400.jpg"
+        },
+        {
+            "id": 13,
+            "title": "Jamila \u0631\u0627\u064a\u0628\u064a",
+            "description": "Jamila \u0631\u0627\u064a\u0628\u064a (165 g). Trusted quality from Danone.",
+            "category": "dairy",
+            "price": 18.56,
+            "discountPercentage": 6.31,
+            "rating": 4.55,
+            "stock": 30,
+            "tags": [
+                "dairy",
+                "yogurt"
+            ],
+            "brand": "Danone",
+            "sku": "DAI-YOG-013",
+            "weight": 4,
+            "dimensions": {
+                "width": 9.15,
+                "height": 9.48,
+                "depth": 6.48
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111032006619"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/103/200/6619/front_fr.69.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/103/200/6619/front_fr.69.400.jpg"
+        },
+        {
+            "id": 14,
+            "title": "raibi jaoda",
+            "description": "raibi jaoda (165g). Trusted quality from Jaouda.",
+            "category": "dairy",
+            "price": 2.98,
+            "discountPercentage": 11.33,
+            "rating": 4.19,
+            "stock": 66,
+            "tags": [
+                "dairy",
+                "yogurt"
+            ],
+            "brand": "Jaouda",
+            "sku": "DAI-YOG-014",
+            "weight": 5,
+            "dimensions": {
+                "width": 6.49,
+                "height": 13.3,
+                "depth": 5.29
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242100930"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/0930/front_fr.48.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/0930/front_fr.48.400.jpg"
+        },
+        {
+            "id": 15,
+            "title": "Creamy Greek Style Natural Yogurt",
+            "description": "Creamy Greek Style Natural Yogurt (1kg). Trusted quality from Milbona.",
+            "category": "dairy",
+            "price": 2.01,
+            "discountPercentage": 7.93,
+            "rating": 4.3,
+            "stock": 65,
+            "tags": [
+                "dairy",
+                "yogurt"
+            ],
+            "brand": "Milbona",
+            "sku": "DAI-YOG-015",
+            "weight": 4,
+            "dimensions": {
+                "width": 6.23,
+                "height": 12.0,
+                "depth": 9.2
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "4056489148739"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/405/648/914/8739/front_en.73.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/405/648/914/8739/front_en.73.400.jpg"
+        },
+        {
+            "id": 16,
+            "title": "\u063a\u0644\u0627\u0644 \u0627\u0644\u0642\u0645\u062d",
+            "description": "\u063a\u0644\u0627\u0644 \u0627\u0644\u0642\u0645\u062d (110 g). Trusted quality from Jaouda.",
+            "category": "dairy",
+            "price": 12.7,
+            "discountPercentage": 7.61,
+            "rating": 4.25,
+            "stock": 148,
+            "tags": [
+                "dairy",
+                "yogurt"
+            ],
+            "brand": "Jaouda",
+            "sku": "DAI-YOG-016",
+            "weight": 1,
+            "dimensions": {
+                "width": 10.74,
+                "height": 6.87,
+                "depth": 9.75
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242102002"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/2002/front_en.22.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/2002/front_en.22.400.jpg"
+        },
+        {
+            "id": 17,
+            "title": "Jebli",
+            "description": "Jebli (190g). Trusted quality from Centrale.",
+            "category": "dairy",
+            "price": 10.06,
+            "discountPercentage": 12.15,
+            "rating": 4.8,
+            "stock": 103,
+            "tags": [
+                "dairy",
+                "cream"
+            ],
+            "brand": "Centrale",
+            "sku": "DAI-CRE-017",
+            "weight": 2,
+            "dimensions": {
+                "width": 5.66,
+                "height": 13.48,
+                "depth": 5.29
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111206000733"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/120/600/0733/front_ar.98.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/120/600/0733/front_ar.98.400.jpg"
+        },
+        {
+            "id": 18,
+            "title": "Le Beurre Tendre Doux",
+            "description": "Le Beurre Tendre Doux (250 g). Trusted quality from Elle & Vire.",
+            "category": "dairy",
+            "price": 7.61,
+            "discountPercentage": 8.04,
+            "rating": 3.38,
+            "stock": 146,
+            "tags": [
+                "dairy",
+                "cream"
+            ],
+            "brand": "Elle & Vire",
+            "sku": "DAI-CRE-018",
+            "weight": 3,
+            "dimensions": {
+                "width": 10.51,
+                "height": 6.69,
+                "depth": 7.4
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3451790988677"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/345/179/098/8677/front_en.186.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/345/179/098/8677/front_en.186.400.jpg"
+        },
+        {
+            "id": 19,
+            "title": "Philadelphia",
+            "description": "Philadelphia (165g). Trusted quality from Mondelez International.",
+            "category": "dairy",
+            "price": 6.84,
+            "discountPercentage": 5.03,
+            "rating": 3.38,
+            "stock": 11,
+            "tags": [
+                "dairy",
+                "cream"
+            ],
+            "brand": "Mondelez International",
+            "sku": "DAI-CRE-019",
+            "weight": 5,
+            "dimensions": {
+                "width": 12.57,
+                "height": 18.29,
+                "depth": 8.01
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7622201693916"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/762/220/169/3916/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/762/220/169/3916/front_en.3.400.jpg"
+        },
+        {
+            "id": 20,
+            "title": "Organic Lightly Salted Wholegrain Low Fat Rice Cakes",
+            "description": "Organic Lightly Salted Wholegrain Low Fat Rice Cakes (130 g). Trusted quality from Kallo.",
+            "category": "staples",
+            "price": 15.37,
+            "discountPercentage": 5.12,
+            "rating": 3.86,
+            "stock": 110,
+            "tags": [
+                "staples",
+                "rice"
+            ],
+            "brand": "Kallo",
+            "sku": "STA-RIC-020",
+            "weight": 1,
+            "dimensions": {
+                "width": 6.2,
+                "height": 13.05,
+                "depth": 6.21
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5013665100065"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/366/510/0065/front_en.58.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/366/510/0065/front_en.58.400.jpg"
+        },
+        {
+            "id": 21,
+            "title": "Rice Krispies",
+            "description": "Rice Krispies (430g). Trusted quality from Kellogg\u2019s.",
+            "category": "staples",
+            "price": 14.89,
+            "discountPercentage": 5.87,
+            "rating": 3.95,
+            "stock": 39,
+            "tags": [
+                "staples",
+                "rice"
+            ],
+            "brand": "Kellogg\u2019s",
+            "sku": "STA-RIC-021",
+            "weight": 2,
+            "dimensions": {
+                "width": 7.96,
+                "height": 15.45,
+                "depth": 6.46
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5059319029702"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/505/931/902/9702/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/505/931/902/9702/front_en.3.400.jpg"
+        },
+        {
+            "id": 22,
+            "title": "Smoky Spanish-Style Grains & Rice",
+            "description": "Smoky Spanish-Style Grains & Rice (250g). Trusted quality from Merchant Gourmet.",
+            "category": "staples",
+            "price": 2.19,
+            "discountPercentage": 11.98,
+            "rating": 3.85,
+            "stock": 59,
+            "tags": [
+                "staples",
+                "rice"
+            ],
+            "brand": "Merchant Gourmet",
+            "sku": "STA-RIC-022",
+            "weight": 4,
+            "dimensions": {
+                "width": 5.41,
+                "height": 5.62,
+                "depth": 6.05
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5018095004341"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/809/500/4341/front_en.11.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/809/500/4341/front_en.11.400.jpg"
+        },
+        {
+            "id": 23,
+            "title": "Belgian Dark Chocolate Rice Cake Thins imp",
+            "description": "Belgian Dark Chocolate Rice Cake Thins imp (90g). Trusted quality from Kall\u00f8.",
+            "category": "staples",
+            "price": 5.53,
+            "discountPercentage": 7.83,
+            "rating": 4.91,
+            "stock": 17,
+            "tags": [
+                "staples",
+                "rice"
+            ],
+            "brand": "Kall\u00f8",
+            "sku": "STA-RIC-023",
+            "weight": 3,
+            "dimensions": {
+                "width": 14.55,
+                "height": 19.95,
+                "depth": 7.89
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5013665103028"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/366/510/3028/front_fr.61.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/366/510/3028/front_fr.61.400.jpg"
+        },
+        {
+            "id": 24,
+            "title": "Wholegrain Basmati Rice",
+            "description": "Wholegrain Basmati Rice (250 g). Trusted quality from Tilda.",
+            "category": "staples",
+            "price": 15.45,
+            "discountPercentage": 14.37,
+            "rating": 4.0,
+            "stock": 137,
+            "tags": [
+                "staples",
+                "rice"
+            ],
+            "brand": "Tilda",
+            "sku": "STA-RIC-024",
+            "weight": 3,
+            "dimensions": {
+                "width": 10.0,
+                "height": 6.93,
+                "depth": 5.08
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5011157888132"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/115/788/8132/front_en.28.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/115/788/8132/front_en.28.400.jpg"
+        },
+        {
+            "id": 25,
+            "title": "50/50 Medium Bread",
+            "description": "50/50 Medium Bread (800 g). Trusted quality from Kingsmill.",
+            "category": "staples",
+            "price": 13.82,
+            "discountPercentage": 5.99,
+            "rating": 3.38,
+            "stock": 65,
+            "tags": [
+                "staples",
+                "wheat flour"
+            ],
+            "brand": "Kingsmill",
+            "sku": "STA-WHE-025",
+            "weight": 3,
+            "dimensions": {
+                "width": 11.8,
+                "height": 17.72,
+                "depth": 6.64
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5010092093441"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/009/209/3441/front_en.61.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/009/209/3441/front_en.61.400.jpg"
+        },
+        {
+            "id": 26,
+            "title": "Harrys beau & bon pain de mie farine de ble cereales & graines 320g",
+            "description": "Harrys beau & bon pain de mie farine de ble cereales & graines 320g (320 g). Trusted quality from Harrys.",
+            "category": "staples",
+            "price": 11.99,
+            "discountPercentage": 8.78,
+            "rating": 3.26,
+            "stock": 101,
+            "tags": [
+                "staples",
+                "wheat flour"
+            ],
+            "brand": "Harrys",
+            "sku": "STA-WHE-026",
+            "weight": 4,
+            "dimensions": {
+                "width": 5.26,
+                "height": 11.08,
+                "depth": 6.54
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3228857001194"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/322/885/700/1194/front_fr.1107.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/322/885/700/1194/front_fr.1107.400.jpg"
+        },
+        {
+            "id": 27,
+            "title": "Wholemeal Pittas",
+            "description": "Wholemeal Pittas (360 g). Trusted quality from Sainsbury's.",
+            "category": "staples",
+            "price": 6.32,
+            "discountPercentage": 7.23,
+            "rating": 3.17,
+            "stock": 35,
+            "tags": [
+                "staples",
+                "wheat flour"
+            ],
+            "brand": "Sainsbury's",
+            "sku": "STA-WHE-027",
+            "weight": 5,
+            "dimensions": {
+                "width": 13.7,
+                "height": 16.22,
+                "depth": 9.23
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "00234931"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/000/023/4931/front_en.70.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/000/023/4931/front_en.70.400.jpg"
+        },
+        {
+            "id": 28,
+            "title": "Tiger Rolls with Sourdough",
+            "description": "Tiger Rolls with Sourdough (320 g). Trusted quality from Jason's.",
+            "category": "staples",
+            "price": 14.39,
+            "discountPercentage": 7.93,
+            "rating": 4.93,
+            "stock": 65,
+            "tags": [
+                "staples",
+                "wheat flour"
+            ],
+            "brand": "Jason's",
+            "sku": "STA-WHE-028",
+            "weight": 3,
+            "dimensions": {
+                "width": 7.92,
+                "height": 15.81,
+                "depth": 7.11
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5025125000174"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/502/512/500/0174/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/502/512/500/0174/front_en.3.400.jpg"
+        },
+        {
+            "id": 29,
+            "title": "Malted Bloomer",
+            "description": "Malted Bloomer (800g). Trusted quality from Village Bakery.",
+            "category": "staples",
+            "price": 4.42,
+            "discountPercentage": 11.83,
+            "rating": 4.13,
+            "stock": 22,
+            "tags": [
+                "staples",
+                "wheat flour"
+            ],
+            "brand": "Village Bakery",
+            "sku": "STA-WHE-029",
+            "weight": 2,
+            "dimensions": {
+                "width": 5.49,
+                "height": 16.86,
+                "depth": 6.64
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "4088600184197"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/408/860/018/4197/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/408/860/018/4197/front_en.3.400.jpg"
+        },
+        {
+            "id": 30,
+            "title": "Cosumar Sucre En Lingot Pour Le Th\u00e9 1 kg",
+            "description": "Cosumar Sucre En Lingot Pour Le Th\u00e9 1 kg (1 kg 1000 g). Trusted quality from COSUMAR.",
+            "category": "staples",
+            "price": 17.95,
+            "discountPercentage": 10.39,
+            "rating": 4.89,
+            "stock": 47,
+            "tags": [
+                "staples",
+                "sugar"
+            ],
+            "brand": "COSUMAR",
+            "sku": "STA-SUG-030",
+            "weight": 3,
+            "dimensions": {
+                "width": 5.68,
+                "height": 17.51,
+                "depth": 9.83
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111029000118"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/102/900/0118/front_fr.6.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/102/900/0118/front_fr.6.400.jpg"
+        },
+        {
+            "id": 31,
+            "title": "Barista Edition Oat Drink",
+            "description": "Barista Edition Oat Drink (1l). Trusted quality from Oatly.",
+            "category": "staples",
+            "price": 12.16,
+            "discountPercentage": 10.62,
+            "rating": 4.99,
+            "stock": 61,
+            "tags": [
+                "staples",
+                "sugar"
+            ],
+            "brand": "Oatly",
+            "sku": "STA-SUG-031",
+            "weight": 2,
+            "dimensions": {
+                "width": 11.0,
+                "height": 19.57,
+                "depth": 9.34
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7394376616228"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/739/437/661/6228/front_en.197.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/739/437/661/6228/front_en.197.400.jpg"
+        },
+        {
+            "id": 32,
+            "title": "Weetabix",
+            "description": "Weetabix (430 g). Trusted quality from Weetabix.",
+            "category": "staples",
+            "price": 15.34,
+            "discountPercentage": 14.85,
+            "rating": 4.17,
+            "stock": 72,
+            "tags": [
+                "staples",
+                "sugar"
+            ],
+            "brand": "Weetabix",
+            "sku": "STA-SUG-032",
+            "weight": 2,
+            "dimensions": {
+                "width": 10.51,
+                "height": 5.1,
+                "depth": 5.88
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5010029000016"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/002/900/0016/front_en.44.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/002/900/0016/front_en.44.400.jpg"
+        },
+        {
+            "id": 33,
+            "title": "Krisprolls complets sans sucres ajout\u00e9s",
+            "description": "Krisprolls complets sans sucres ajout\u00e9s (425 g). Trusted quality from Krisprolls.",
+            "category": "staples",
+            "price": 3.3,
+            "discountPercentage": 8.68,
+            "rating": 4.67,
+            "stock": 117,
+            "tags": [
+                "staples",
+                "sugar"
+            ],
+            "brand": "Krisprolls",
+            "sku": "STA-SUG-033",
+            "weight": 5,
+            "dimensions": {
+                "width": 6.25,
+                "height": 12.73,
+                "depth": 9.01
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7311070032611"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/731/107/003/2611/front_en.91.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/731/107/003/2611/front_en.91.400.jpg"
+        },
+        {
+            "id": 34,
+            "title": "Hafer Milch",
+            "description": "Hafer Milch (1 l). Trusted quality from alpro.",
+            "category": "staples",
+            "price": 11.65,
+            "discountPercentage": 12.82,
+            "rating": 4.81,
+            "stock": 147,
+            "tags": [
+                "staples",
+                "sugar"
+            ],
+            "brand": "alpro",
+            "sku": "STA-SUG-034",
+            "weight": 5,
+            "dimensions": {
+                "width": 14.49,
+                "height": 12.96,
+                "depth": 5.23
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5411188124689"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/541/118/812/4689/front_en.455.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/541/118/812/4689/front_en.455.400.jpg"
+        },
+        {
+            "id": 35,
+            "title": "Sel de table iod\u00e9",
+            "description": "Sel de table iod\u00e9 (400g). Trusted quality from Star.",
+            "category": "staples",
+            "price": 5.14,
+            "discountPercentage": 14.63,
+            "rating": 4.53,
+            "stock": 143,
+            "tags": [
+                "staples",
+                "salt"
+            ],
+            "brand": "Star",
+            "sku": "STA-SAL-035",
+            "weight": 1,
+            "dimensions": {
+                "width": 6.36,
+                "height": 9.66,
+                "depth": 9.99
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111184001562"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/118/400/1562/front_en.18.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/118/400/1562/front_en.18.400.jpg"
+        },
+        {
+            "id": 36,
+            "title": "Cashewkerne",
+            "description": "Cashewkerne (200g). Trusted quality from Alesto.",
+            "category": "staples",
+            "price": 18.72,
+            "discountPercentage": 10.01,
+            "rating": 4.82,
+            "stock": 124,
+            "tags": [
+                "staples",
+                "salt"
+            ],
+            "brand": "Alesto",
+            "sku": "STA-SAL-036",
+            "weight": 5,
+            "dimensions": {
+                "width": 11.88,
+                "height": 14.85,
+                "depth": 7.79
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "20267605"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/002/026/7605/front_en.503.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/002/026/7605/front_en.503.400.jpg"
+        },
+        {
+            "id": 37,
+            "title": "Special Muesli 30% fruits & noix",
+            "description": "Special Muesli 30% fruits & noix (750 g). Trusted quality from Jordans.",
+            "category": "staples",
+            "price": 16.65,
+            "discountPercentage": 10.28,
+            "rating": 3.63,
+            "stock": 137,
+            "tags": [
+                "staples",
+                "salt"
+            ],
+            "brand": "Jordans",
+            "sku": "STA-SAL-037",
+            "weight": 5,
+            "dimensions": {
+                "width": 10.48,
+                "height": 11.17,
+                "depth": 6.46
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5010477348678"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/501/047/734/8678/front_fr.226.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/501/047/734/8678/front_fr.226.400.jpg"
+        },
+        {
+            "id": 38,
+            "title": "Paysan Breton - Le Fromage Fouett\u00e9 Madame Lo\u00efk - Nature au Sel de Gu\u00e9rande",
+            "description": "Paysan Breton - Le Fromage Fouett\u00e9 Madame Lo\u00efk - Nature au Sel de Gu\u00e9rande (180 g). Trusted quality from Le Fromage Fouett\u00e9 Madame Lo\u00efk.",
+            "category": "staples",
+            "price": 15.92,
+            "discountPercentage": 9.99,
+            "rating": 4.68,
+            "stock": 20,
+            "tags": [
+                "staples",
+                "salt"
+            ],
+            "brand": "Le Fromage Fouett\u00e9 Madame Lo\u00efk",
+            "sku": "STA-SAL-038",
+            "weight": 5,
+            "dimensions": {
+                "width": 10.81,
+                "height": 9.85,
+                "depth": 5.31
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3412290070101"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/341/229/007/0101/front_fr.104.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/341/229/007/0101/front_fr.104.400.jpg"
+        },
+        {
+            "id": 39,
+            "title": "olive spray oil",
+            "description": "olive spray oil (190 ml). Trusted quality from Fry light.",
+            "category": "staples",
+            "price": 16.7,
+            "discountPercentage": 12.4,
+            "rating": 3.87,
+            "stock": 56,
+            "tags": [
+                "staples",
+                "cooking oil"
+            ],
+            "brand": "Fry light",
+            "sku": "STA-COO-039",
+            "weight": 2,
+            "dimensions": {
+                "width": 10.46,
+                "height": 6.91,
+                "depth": 7.61
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5000442007594"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/500/044/200/7594/front_en.48.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/500/044/200/7594/front_en.48.400.jpg"
+        },
+        {
+            "id": 40,
+            "title": "Frylight Sunflower Oil Spray 190ml",
+            "description": "Frylight Sunflower Oil Spray 190ml (190ml). Trusted quality from Frylight.",
+            "category": "staples",
+            "price": 8.71,
+            "discountPercentage": 9.89,
+            "rating": 4.84,
+            "stock": 103,
+            "tags": [
+                "staples",
+                "cooking oil"
+            ],
+            "brand": "Frylight",
+            "sku": "STA-COO-040",
+            "weight": 2,
+            "dimensions": {
+                "width": 8.0,
+                "height": 19.27,
+                "depth": 9.06
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5000442007617"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/500/044/200/7617/front_en.56.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/500/044/200/7617/front_en.56.400.jpg"
+        },
+        {
+            "id": 41,
+            "title": "MAGGI Bouillon KUB Volaille R\u00e9duit en sel de -25% 120g",
+            "description": "MAGGI Bouillon KUB Volaille R\u00e9duit en sel de -25% 120g (120 g). Trusted quality from Nestl\u00e9.",
+            "category": "staples",
+            "price": 3.09,
+            "discountPercentage": 10.42,
+            "rating": 4.04,
+            "stock": 88,
+            "tags": [
+                "staples",
+                "cooking oil"
+            ],
+            "brand": "Nestl\u00e9",
+            "sku": "STA-COO-041",
+            "weight": 4,
+            "dimensions": {
+                "width": 11.51,
+                "height": 11.0,
+                "depth": 8.11
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7613032397623"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/761/303/239/7623/front_en.174.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/761/303/239/7623/front_en.174.400.jpg"
+        },
+        {
+            "id": 42,
+            "title": "Healthier Oil for Cooking (Red Palm Fruit & Rapeseed Oil)",
+            "description": "Healthier Oil for Cooking (Red Palm Fruit & Rapeseed Oil) (). Trusted quality from Carotino.",
+            "category": "staples",
+            "price": 10.96,
+            "discountPercentage": 5.58,
+            "rating": 4.72,
+            "stock": 10,
+            "tags": [
+                "staples",
+                "cooking oil"
+            ],
+            "brand": "Carotino",
+            "sku": "STA-COO-042",
+            "weight": 3,
+            "dimensions": {
+                "width": 13.31,
+                "height": 15.1,
+                "depth": 8.56
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "9557129008819"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/955/712/900/8819/front_en.14.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/955/712/900/8819/front_en.14.400.jpg"
+        },
+        {
+            "id": 43,
+            "title": "Mild and light rapeseed oil cooking spray",
+            "description": "Mild and light rapeseed oil cooking spray (190 ml). Trusted quality from Fry light.",
+            "category": "staples",
+            "price": 14.45,
+            "discountPercentage": 12.57,
+            "rating": 4.0,
+            "stock": 138,
+            "tags": [
+                "staples",
+                "cooking oil"
+            ],
+            "brand": "Fry light",
+            "sku": "STA-COO-043",
+            "weight": 3,
+            "dimensions": {
+                "width": 5.78,
+                "height": 19.95,
+                "depth": 7.22
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5000442008003"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/500/044/200/8003/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/500/044/200/8003/front_en.3.400.jpg"
+        },
+        {
+            "id": 44,
+            "title": "Baby diapers",
+            "description": "Baby diapers (Standard Pack). Trusted quality from Generic.",
+            "category": "baby-products",
+            "price": 40.48,
+            "discountPercentage": 8.51,
+            "rating": 3.48,
+            "stock": 73,
+            "tags": [
+                "baby-products",
+                "diapers"
+            ],
+            "brand": "Generic",
+            "sku": "BAB-DIA-044",
+            "weight": 1,
+            "dimensions": {
+                "width": 10.64,
+                "height": 14.51,
+                "depth": 9.32
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0681131366618"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/068/113/136/6618/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/068/113/136/6618/front_en.3.400.jpg"
+        },
+        {
+            "id": 45,
+            "title": "diaper",
+            "description": "diaper (Standard Pack). Trusted quality from Generic.",
+            "category": "baby-products",
+            "price": 42.13,
+            "discountPercentage": 13.76,
+            "rating": 4.64,
+            "stock": 149,
+            "tags": [
+                "baby-products",
+                "diapers"
+            ],
+            "brand": "Generic",
+            "sku": "BAB-DIA-045",
+            "weight": 4,
+            "dimensions": {
+                "width": 8.99,
+                "height": 16.86,
+                "depth": 9.11
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0086679314594"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/008/667/931/4594/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/008/667/931/4594/front_en.3.400.jpg"
+        },
+        {
+            "id": 46,
+            "title": "Diaper Rash Cream",
+            "description": "Diaper Rash Cream (2 oz). Trusted quality from Triple Paste.",
+            "category": "baby-products",
+            "price": 14.04,
+            "discountPercentage": 8.27,
+            "rating": 3.7,
+            "stock": 127,
+            "tags": [
+                "baby-products",
+                "diapers"
+            ],
+            "brand": "Triple Paste",
+            "sku": "BAB-DIA-046",
+            "weight": 2,
+            "dimensions": {
+                "width": 5.42,
+                "height": 9.24,
+                "depth": 6.6
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0316864021014"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/031/686/402/1014/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/031/686/402/1014/front_en.3.400.jpg"
+        },
+        {
+            "id": 47,
+            "title": "Croissance r\u00e9duit en sucre",
+            "description": "Croissance r\u00e9duit en sucre (500 ml). Trusted quality from Jaouda.",
+            "category": "baby-products",
+            "price": 25.16,
+            "discountPercentage": 5.98,
+            "rating": 4.49,
+            "stock": 66,
+            "tags": [
+                "baby-products",
+                "baby food"
+            ],
+            "brand": "Jaouda",
+            "sku": "BAB-BAB-047",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.32,
+                "height": 6.6,
+                "depth": 9.19
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242103528"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/3528/front_fr.76.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/3528/front_fr.76.400.jpg"
+        },
+        {
+            "id": 48,
+            "title": "Gingerbread men biscuits",
+            "description": "Gingerbread men biscuits (100 g). Trusted quality from Organix.",
+            "category": "baby-products",
+            "price": 26.65,
+            "discountPercentage": 8.03,
+            "rating": 3.07,
+            "stock": 47,
+            "tags": [
+                "baby-products",
+                "baby food"
+            ],
+            "brand": "Organix",
+            "sku": "BAB-BAB-048",
+            "weight": 1,
+            "dimensions": {
+                "width": 8.1,
+                "height": 8.96,
+                "depth": 7.79
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5024121222207"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/502/412/122/2207/front_en.23.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/502/412/122/2207/front_en.23.400.jpg"
+        },
+        {
+            "id": 49,
+            "title": "Nursie",
+            "description": "Nursie (Standard Pack). Trusted quality from Danone.",
+            "category": "baby-products",
+            "price": 12.77,
+            "discountPercentage": 5.17,
+            "rating": 4.77,
+            "stock": 104,
+            "tags": [
+                "baby-products",
+                "baby food"
+            ],
+            "brand": "Danone",
+            "sku": "BAB-BAB-049",
+            "weight": 3,
+            "dimensions": {
+                "width": 6.08,
+                "height": 17.87,
+                "depth": 8.14
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3041091758316"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/304/109/175/8316/front_en.16.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/304/109/175/8316/front_en.16.400.jpg"
+        },
+        {
+            "id": 50,
+            "title": "Corn Puffs Star W Cascaval 90G 1 / 20 1.6KG / Box",
+            "description": "Corn Puffs Star W Cascaval 90G 1 / 20 1.6KG / Box (90g). Trusted quality from Star.",
+            "category": "baby-products",
+            "price": 36.56,
+            "discountPercentage": 9.63,
+            "rating": 3.85,
+            "stock": 114,
+            "tags": [
+                "baby-products",
+                "baby food"
+            ],
+            "brand": "Star",
+            "sku": "BAB-BAB-050",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.76,
+                "height": 12.97,
+                "depth": 5.03
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5941000024229"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/594/100/002/4229/front_ro.19.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/594/100/002/4229/front_ro.19.400.jpg"
+        },
+        {
+            "id": 51,
+            "title": "Baby Wipes",
+            "description": "Baby Wipes (Standard Pack). Trusted quality from Water Wipes.",
+            "category": "baby-products",
+            "price": 15.35,
+            "discountPercentage": 14.51,
+            "rating": 3.26,
+            "stock": 52,
+            "tags": [
+                "baby-products",
+                "baby wipes"
+            ],
+            "brand": "Water Wipes",
+            "sku": "BAB-BAB-051",
+            "weight": 3,
+            "dimensions": {
+                "width": 5.66,
+                "height": 17.53,
+                "depth": 7.36
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5099514400142"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/509/951/440/0142/front_en.7.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/509/951/440/0142/front_en.7.400.jpg"
+        },
+        {
+            "id": 52,
+            "title": "BabyWipes",
+            "description": "BabyWipes (100). Trusted quality from Kirkland Signature.",
+            "category": "baby-products",
+            "price": 18.75,
+            "discountPercentage": 6.67,
+            "rating": 3.06,
+            "stock": 134,
+            "tags": [
+                "baby-products",
+                "baby wipes"
+            ],
+            "brand": "Kirkland Signature",
+            "sku": "BAB-BAB-052",
+            "weight": 5,
+            "dimensions": {
+                "width": 10.96,
+                "height": 17.02,
+                "depth": 7.28
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0096619057504"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/009/661/905/7504/front_en.18.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/009/661/905/7504/front_en.18.400.jpg"
+        },
+        {
+            "id": 53,
+            "title": "Baby wet wipes",
+            "description": "Baby wet wipes (100 pieces). Trusted quality from Coop.",
+            "category": "baby-products",
+            "price": 28.32,
+            "discountPercentage": 9.17,
+            "rating": 3.83,
+            "stock": 39,
+            "tags": [
+                "baby-products",
+                "baby wipes"
+            ],
+            "brand": "Coop",
+            "sku": "BAB-BAB-053",
+            "weight": 5,
+            "dimensions": {
+                "width": 9.38,
+                "height": 8.06,
+                "depth": 5.83
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7340011498025"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/734/001/149/8025/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/734/001/149/8025/front_en.3.400.jpg"
+        },
+        {
+            "id": 54,
+            "title": "Pure Baby Wipes",
+            "description": "Pure Baby Wipes (42g). Trusted quality from Ice Breakers.",
+            "category": "baby-products",
+            "price": 26.96,
+            "discountPercentage": 8.56,
+            "rating": 4.04,
+            "stock": 93,
+            "tags": [
+                "baby-products",
+                "baby wipes"
+            ],
+            "brand": "Ice Breakers",
+            "sku": "BAB-BAB-054",
+            "weight": 3,
+            "dimensions": {
+                "width": 8.21,
+                "height": 8.35,
+                "depth": 7.56
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0034000009954"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/003/400/000/9954/front_en.20.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/003/400/000/9954/front_en.20.400.jpg"
+        },
+        {
+            "id": 55,
+            "title": "Head& Shoulder Citrus Fresh 600 ml",
+            "description": "Head& Shoulder Citrus Fresh 600 ml (Standard Pack). Trusted quality from Generic.",
+            "category": "self-care",
+            "price": 6.32,
+            "discountPercentage": 11.48,
+            "rating": 3.73,
+            "stock": 150,
+            "tags": [
+                "self-care",
+                "shampoo"
+            ],
+            "brand": "Generic",
+            "sku": "SEL-SHA-055",
+            "weight": 3,
+            "dimensions": {
+                "width": 7.61,
+                "height": 16.81,
+                "depth": 6.43
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "4084500821507"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/408/450/082/1507/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/408/450/082/1507/front_en.3.400.jpg"
+        },
+        {
+            "id": 56,
+            "title": "Pantene",
+            "description": "Pantene (Standard Pack). Trusted quality from Generic.",
+            "category": "self-care",
+            "price": 22.02,
+            "discountPercentage": 7.99,
+            "rating": 3.99,
+            "stock": 55,
+            "tags": [
+                "self-care",
+                "shampoo"
+            ],
+            "brand": "Generic",
+            "sku": "SEL-SHA-056",
+            "weight": 2,
+            "dimensions": {
+                "width": 5.11,
+                "height": 18.42,
+                "depth": 8.1
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "8700216392785"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/870/021/639/2785/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/870/021/639/2785/front_en.3.400.jpg"
+        },
+        {
+            "id": 57,
+            "title": "aloe vera soap",
+            "description": "aloe vera soap (Standard Pack). Trusted quality from marxbrands marketing B.V.",
+            "category": "self-care",
+            "price": 25.53,
+            "discountPercentage": 5.01,
+            "rating": 4.67,
+            "stock": 109,
+            "tags": [
+                "self-care",
+                "soap"
+            ],
+            "brand": "marxbrands marketing B.V",
+            "sku": "SEL-SOA-057",
+            "weight": 1,
+            "dimensions": {
+                "width": 8.47,
+                "height": 17.65,
+                "depth": 6.25
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "8720847379290"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/872/084/737/9290/front_fr.5.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/872/084/737/9290/front_fr.5.400.jpg"
+        },
+        {
+            "id": 58,
+            "title": "Dettol antibacterial soap Original",
+            "description": "Dettol antibacterial soap Original (Standard Pack). Trusted quality from Dettol.",
+            "category": "self-care",
+            "price": 19.97,
+            "discountPercentage": 12.81,
+            "rating": 4.09,
+            "stock": 54,
+            "tags": [
+                "self-care",
+                "soap"
+            ],
+            "brand": "Dettol",
+            "sku": "SEL-SOA-058",
+            "weight": 2,
+            "dimensions": {
+                "width": 8.22,
+                "height": 7.69,
+                "depth": 9.31
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "50158980"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/005/015/8980/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/005/015/8980/front_en.3.400.jpg"
+        },
+        {
+            "id": 59,
+            "title": "Biologische tomaten soep",
+            "description": "Biologische tomaten soep (). Trusted quality from Albert Heijn.",
+            "category": "self-care",
+            "price": 35.46,
+            "discountPercentage": 13.49,
+            "rating": 3.84,
+            "stock": 59,
+            "tags": [
+                "self-care",
+                "soap"
+            ],
+            "brand": "Albert Heijn",
+            "sku": "SEL-SOA-059",
+            "weight": 3,
+            "dimensions": {
+                "width": 14.28,
+                "height": 19.54,
+                "depth": 6.44
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "8718265082151"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/871/826/508/2151/front_nl.29.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/871/826/508/2151/front_nl.29.400.jpg"
+        },
+        {
+            "id": 60,
+            "title": "oral b pro expert menthe fraiche",
+            "description": "oral b pro expert menthe fraiche (75ml). Trusted quality from oral b.",
+            "category": "self-care",
+            "price": 36.07,
+            "discountPercentage": 10.52,
+            "rating": 3.29,
+            "stock": 96,
+            "tags": [
+                "self-care",
+                "toothpaste"
+            ],
+            "brand": "oral b",
+            "sku": "SEL-TOO-060",
+            "weight": 2,
+            "dimensions": {
+                "width": 13.08,
+                "height": 11.81,
+                "depth": 7.56
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "8001841812670"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/800/184/181/2670/front_fr.6.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/800/184/181/2670/front_fr.6.400.jpg"
+        },
+        {
+            "id": 61,
+            "title": "The cult classic face cleanser",
+            "description": "The cult classic face cleanser (6.7 oz). Trusted quality from tula.",
+            "category": "self-care",
+            "price": 22.62,
+            "discountPercentage": 10.46,
+            "rating": 4.41,
+            "stock": 89,
+            "tags": [
+                "self-care",
+                "face wash"
+            ],
+            "brand": "tula",
+            "sku": "SEL-FAC-061",
+            "weight": 2,
+            "dimensions": {
+                "width": 10.5,
+                "height": 7.58,
+                "depth": 7.02
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0850003310053"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/085/000/331/0053/front_en.4.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/085/000/331/0053/front_en.4.400.jpg"
+        },
+        {
+            "id": 62,
+            "title": "Giorgio Armani Emporio She Gift Set 30ml EDP + 75ml Body Lotion",
+            "description": "Giorgio Armani Emporio She Gift Set 30ml EDP + 75ml Body Lotion (30 ml). Trusted quality from Giorgio Armani.",
+            "category": "self-care",
+            "price": 27.84,
+            "discountPercentage": 13.52,
+            "rating": 3.92,
+            "stock": 126,
+            "tags": [
+                "self-care",
+                "body lotion"
+            ],
+            "brand": "Giorgio Armani",
+            "sku": "SEL-BOD-062",
+            "weight": 2,
+            "dimensions": {
+                "width": 8.07,
+                "height": 6.83,
+                "depth": 5.12
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3614272324329"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/361/427/232/4329/front_de.6.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/361/427/232/4329/front_de.6.400.jpg"
+        },
+        {
+            "id": 63,
+            "title": "Moisturizing Sunscreen Lotion For Face and Body 30",
+            "description": "Moisturizing Sunscreen Lotion For Face and Body 30 (Standard Pack). Trusted quality from Black Girl Sunscreen.",
+            "category": "self-care",
+            "price": 15.39,
+            "discountPercentage": 9.54,
+            "rating": 3.22,
+            "stock": 39,
+            "tags": [
+                "self-care",
+                "body lotion"
+            ],
+            "brand": "Black Girl Sunscreen",
+            "sku": "SEL-BOD-063",
+            "weight": 5,
+            "dimensions": {
+                "width": 9.2,
+                "height": 12.49,
+                "depth": 7.52
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0860121000408"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/086/012/100/0408/front_en.5.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/086/012/100/0408/front_en.5.400.jpg"
+        },
+        {
+            "id": 64,
+            "title": "Bath & Body Works Aromatherapy Eucalyptus + Spearmint Moisturizing Body Lotion",
+            "description": "Bath & Body Works Aromatherapy Eucalyptus + Spearmint Moisturizing Body Lotion (192 mL). Trusted quality from Bath & Body Works.",
+            "category": "self-care",
+            "price": 23.07,
+            "discountPercentage": 6.07,
+            "rating": 3.66,
+            "stock": 37,
+            "tags": [
+                "self-care",
+                "body lotion"
+            ],
+            "brand": "Bath & Body Works",
+            "sku": "SEL-BOD-064",
+            "weight": 5,
+            "dimensions": {
+                "width": 7.57,
+                "height": 13.21,
+                "depth": 6.64
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0667557112541"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/066/755/711/2541/front_en.6.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/066/755/711/2541/front_en.6.400.jpg"
+        },
+        {
+            "id": 65,
+            "title": "Compliments Cocoa Butter Body Lotion",
+            "description": "Compliments Cocoa Butter Body Lotion (600 mL). Trusted quality from Compliments.",
+            "category": "self-care",
+            "price": 42.7,
+            "discountPercentage": 7.65,
+            "rating": 4.18,
+            "stock": 49,
+            "tags": [
+                "self-care",
+                "body lotion"
+            ],
+            "brand": "Compliments",
+            "sku": "SEL-BOD-065",
+            "weight": 1,
+            "dimensions": {
+                "width": 12.01,
+                "height": 7.44,
+                "depth": 6.83
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0055742549133"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/005/574/254/9133/front_en.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/005/574/254/9133/front_en.3.400.jpg"
+        },
+        {
+            "id": 66,
+            "title": "Fresh Red Apple",
+            "description": "Crisp and sweet Red Apple (1kg). Trusted quality from Farm Fresh.",
+            "category": "fruits-vegetables",
+            "price": 4.50,
+            "discountPercentage": 0,
+            "rating": 4.8,
+            "stock": 100,
+            "tags": [
+                "fruits-vegetables",
+                "apple",
+                "fruit"
+            ],
+            "brand": "Farm Fresh",
+            "sku": "FRU-APP-066",
+            "weight": 1,
+            "dimensions": {
+                "width": 10,
+                "height": 10,
+                "depth": 10
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "No returns",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0000000000066"
+            },
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/400px-Red_Apple.jpg"
+            ],
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/400px-Red_Apple.jpg"
+        },
+        {
+            "id": 67,
+            "title": "Fresh Banana",
+            "description": "Sweet and energy-boosting Banana (1kg). Trusted quality from Farm Fresh.",
+            "category": "fruits-vegetables",
+            "price": 2.50,
+            "discountPercentage": 0,
+            "rating": 4.7,
+            "stock": 120,
+            "tags": [
+                "fruits-vegetables",
+                "banana",
+                "fruit"
+            ],
+            "brand": "Farm Fresh",
+            "sku": "FRU-BAN-067",
+            "weight": 1,
+            "dimensions": {
+                "width": 15,
+                "height": 4,
+                "depth": 4
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "No returns",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0000000000067"
+            },
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/400px-Banana-Single.jpg"
+            ],
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/400px-Banana-Single.jpg"
+        },
+        {
+            "id": 68,
+            "title": "Fresh Carrot",
+            "description": "Crunchy and healthy Carrot (1kg). Trusted quality from Farm Fresh.",
+            "category": "fruits-vegetables",
+            "price": 3.00,
+            "discountPercentage": 0,
+            "rating": 4.6,
+            "stock": 150,
+            "tags": [
+                "fruits-vegetables",
+                "carrot",
+                "vegetable"
+            ],
+            "brand": "Farm Fresh",
+            "sku": "VEG-CAR-068",
+            "weight": 1,
+            "dimensions": {
+                "width": 15,
+                "height": 3,
+                "depth": 3
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "No returns",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0000000000068"
+            },
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/13-08-31-wien-redaktion-meeting-14.jpg/400px-13-08-31-wien-redaktion-meeting-14.jpg"
+            ],
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/13-08-31-wien-redaktion-meeting-14.jpg/400px-13-08-31-wien-redaktion-meeting-14.jpg"
+        },
+        {
+            "id": 69,
+            "title": "Fresh Potato",
+            "description": "Versatile and earthy Potato (1kg). Trusted quality from Farm Fresh.",
+            "category": "fruits-vegetables",
+            "price": 2.00,
+            "discountPercentage": 0,
+            "rating": 4.5,
+            "stock": 200,
+            "tags": [
+                "fruits-vegetables",
+                "potato",
+                "vegetable"
+            ],
+            "brand": "Farm Fresh",
+            "sku": "VEG-POT-069",
+            "weight": 1,
+            "dimensions": {
+                "width": 8,
+                "height": 6,
+                "depth": 6
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "No returns",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0000000000069"
+            },
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/400px-Patates.jpg"
+            ],
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/400px-Patates.jpg"
+        },
+        {
+            "id": 70,
+            "title": "Fresh Tomato",
+            "description": "Juicy and ripe Tomato (1kg). Trusted quality from Farm Fresh.",
+            "category": "fruits-vegetables",
+            "price": 3.50,
+            "discountPercentage": 0,
+            "rating": 4.7,
+            "stock": 100,
+            "tags": [
+                "fruits-vegetables",
+                "tomato",
+                "vegetable"
+            ],
+            "brand": "Farm Fresh",
+            "sku": "VEG-TOM-070",
+            "weight": 1,
+            "dimensions": {
+                "width": 6,
+                "height": 6,
+                "depth": 6
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "No returns",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0000000000070"
+            },
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/400px-Tomato_je.jpg"
+            ],
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/400px-Tomato_je.jpg"
+        },
+        {
+            "id": 71,
+            "title": "Fresh Red Onion",
+            "description": "Flavorful Red Onion (1kg). Trusted quality from Farm Fresh.",
+            "category": "fruits-vegetables",
+            "price": 2.80,
+            "discountPercentage": 0,
+            "rating": 4.5,
+            "stock": 80,
+            "tags": [
+                "fruits-vegetables",
+                "onion",
+                "vegetable"
+            ],
+            "brand": "Farm Fresh",
+            "sku": "VEG-ONI-071",
+            "weight": 1,
+            "dimensions": {
+                "width": 5,
+                "height": 5,
+                "depth": 5
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "No returns",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "0000000000071"
+            },
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/400px-Onion_on_White.JPG"
+            ],
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/400px-Onion_on_White.JPG"
+        },
+        {
+            "id": 89,
+            "title": "Excellence Noir Prodigieux 90% Cacao",
+            "description": "Excellence Noir Prodigieux 90% Cacao (100g). Trusted quality from Lindt EXCELLENCE.",
+            "category": "snacks",
+            "price": 13.6,
+            "discountPercentage": 13.68,
+            "rating": 3.42,
+            "stock": 44,
+            "tags": [
+                "snacks",
+                "chocolate"
+            ],
+            "brand": "Lindt EXCELLENCE",
+            "sku": "SNA-CHO-089",
+            "weight": 4,
+            "dimensions": {
+                "width": 9.58,
+                "height": 10.9,
+                "depth": 8.1
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3046920029759"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/304/692/002/9759/front_en.492.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/304/692/002/9759/front_en.492.400.jpg"
+        },
+        {
+            "id": 90,
+            "title": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434 85% \u043a\u0430\u043a\u0430\u043e\u0432\u0430 \u043c\u0430\u0441\u0430",
+            "description": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434 85% \u043a\u0430\u043a\u0430\u043e\u0432\u0430 \u043c\u0430\u0441\u0430 (125g). Trusted quality from J. D. Gross.",
+            "category": "snacks",
+            "price": 4.08,
+            "discountPercentage": 6.21,
+            "rating": 3.18,
+            "stock": 26,
+            "tags": [
+                "snacks",
+                "chocolate"
+            ],
+            "brand": "J. D. Gross",
+            "sku": "SNA-CHO-090",
+            "weight": 2,
+            "dimensions": {
+                "width": 6.77,
+                "height": 14.39,
+                "depth": 6.79
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "20995553"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/002/099/5553/front_en.314.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/002/099/5553/front_en.314.400.jpg"
+        },
+        {
+            "id": 91,
+            "title": "nutella",
+            "description": "nutella (350 g). Trusted quality from nutella.",
+            "category": "snacks",
+            "price": 19.13,
+            "discountPercentage": 7.67,
+            "rating": 4.74,
+            "stock": 128,
+            "tags": [
+                "snacks",
+                "chocolate"
+            ],
+            "brand": "nutella",
+            "sku": "SNA-CHO-091",
+            "weight": 2,
+            "dimensions": {
+                "width": 9.97,
+                "height": 17.96,
+                "depth": 7.07
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "80177173"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/008/017/7173/front_en.451.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/008/017/7173/front_en.451.400.jpg"
+        },
+        {
+            "id": 92,
+            "title": "FIBRES",
+            "description": "FIBRES (230 g). Trusted quality from Wasa.",
+            "category": "snacks",
+            "price": 18.98,
+            "discountPercentage": 11.23,
+            "rating": 4.81,
+            "stock": 69,
+            "tags": [
+                "snacks",
+                "chips"
+            ],
+            "brand": "Wasa",
+            "sku": "SNA-CHI-092",
+            "weight": 5,
+            "dimensions": {
+                "width": 10.96,
+                "height": 12.47,
+                "depth": 5.17
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7300400481588"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/730/040/048/1588/front_en.269.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/730/040/048/1588/front_en.269.400.jpg"
+        },
+        {
+            "id": 93,
+            "title": "Pringles Sare",
+            "description": "Pringles Sare (165 g). Trusted quality from Pringles.",
+            "category": "snacks",
+            "price": 16.31,
+            "discountPercentage": 12.5,
+            "rating": 4.03,
+            "stock": 145,
+            "tags": [
+                "snacks",
+                "chips"
+            ],
+            "brand": "Pringles",
+            "sku": "SNA-CHI-093",
+            "weight": 4,
+            "dimensions": {
+                "width": 7.2,
+                "height": 15.02,
+                "depth": 8.64
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5053990101573"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/505/399/010/1573/front_en.44.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/505/399/010/1573/front_en.44.400.jpg"
+        },
+        {
+            "id": 94,
+            "title": "wasa",
+            "description": "wasa (270 g). Trusted quality from Barilla.",
+            "category": "snacks",
+            "price": 14.02,
+            "discountPercentage": 9.54,
+            "rating": 3.77,
+            "stock": 16,
+            "tags": [
+                "snacks",
+                "chips"
+            ],
+            "brand": "Barilla",
+            "sku": "SNA-CHI-094",
+            "weight": 3,
+            "dimensions": {
+                "width": 8.73,
+                "height": 17.79,
+                "depth": 9.96
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7300400481571"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/730/040/048/1571/front_fr.1734.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/730/040/048/1571/front_fr.1734.400.jpg"
+        },
+        {
+            "id": 95,
+            "title": "Prince Go\u00fbt Chocolat",
+            "description": "Prince Go\u00fbt Chocolat (300 g). Trusted quality from LU.",
+            "category": "snacks",
+            "price": 12.66,
+            "discountPercentage": 8.13,
+            "rating": 4.76,
+            "stock": 31,
+            "tags": [
+                "snacks",
+                "biscuits"
+            ],
+            "brand": "LU",
+            "sku": "SNA-BIS-095",
+            "weight": 4,
+            "dimensions": {
+                "width": 12.67,
+                "height": 11.42,
+                "depth": 7.89
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7622210449283"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/762/221/044/9283/front_en.605.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/762/221/044/9283/front_en.605.400.jpg"
+        },
+        {
+            "id": 96,
+            "title": "Tonik",
+            "description": "Tonik (22 g). Trusted quality from \u0639\u0631\u0628\u064a.",
+            "category": "snacks",
+            "price": 18.49,
+            "discountPercentage": 7.41,
+            "rating": 3.46,
+            "stock": 13,
+            "tags": [
+                "snacks",
+                "biscuits"
+            ],
+            "brand": "\u0639\u0631\u0628\u064a",
+            "sku": "SNA-BIS-096",
+            "weight": 1,
+            "dimensions": {
+                "width": 10.14,
+                "height": 6.45,
+                "depth": 8.8
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111031005064"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/103/100/5064/front_fr.56.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/103/100/5064/front_fr.56.400.jpg"
+        },
+        {
+            "id": 97,
+            "title": "S\u00e9same",
+            "description": "S\u00e9same (230g). Trusted quality from Gerbl\u00e9.",
+            "category": "snacks",
+            "price": 18.61,
+            "discountPercentage": 10.9,
+            "rating": 3.79,
+            "stock": 93,
+            "tags": [
+                "snacks",
+                "biscuits"
+            ],
+            "brand": "Gerbl\u00e9",
+            "sku": "SNA-BIS-097",
+            "weight": 2,
+            "dimensions": {
+                "width": 7.51,
+                "height": 5.31,
+                "depth": 6.07
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3175680011480"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/317/568/001/1480/front_en.221.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/317/568/001/1480/front_en.221.400.jpg"
+        },
+        {
+            "id": 98,
+            "title": "Henry\u2019s",
+            "description": "Henry\u2019s (42g). Trusted quality from Henry's.",
+            "category": "snacks",
+            "price": 6.32,
+            "discountPercentage": 7.7,
+            "rating": 3.35,
+            "stock": 129,
+            "tags": [
+                "snacks",
+                "biscuits"
+            ],
+            "brand": "Henry's",
+            "sku": "SNA-BIS-098",
+            "weight": 1,
+            "dimensions": {
+                "width": 5.38,
+                "height": 18.84,
+                "depth": 9.61
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3362600011044"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/336/260/001/1044/front_fr.50.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/336/260/001/1044/front_fr.50.400.jpg"
+        },
+        {
+            "id": 99,
+            "title": "KING COOKIES",
+            "description": "KING COOKIES (). Trusted quality from Excelo.",
+            "category": "snacks",
+            "price": 11.65,
+            "discountPercentage": 14.6,
+            "rating": 3.8,
+            "stock": 113,
+            "tags": [
+                "snacks",
+                "biscuits"
+            ],
+            "brand": "Excelo",
+            "sku": "SNA-BIS-099",
+            "weight": 4,
+            "dimensions": {
+                "width": 11.73,
+                "height": 14.09,
+                "depth": 5.35
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111259343108"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/125/934/3108/front_fr.25.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/125/934/3108/front_fr.25.400.jpg"
+        },
+        {
+            "id": 100,
+            "title": "King cookies choco",
+            "description": "King cookies choco (Standard Pack). Trusted quality from Excelo.",
+            "category": "snacks",
+            "price": 2.34,
+            "discountPercentage": 8.71,
+            "rating": 3.62,
+            "stock": 64,
+            "tags": [
+                "snacks",
+                "cookies"
+            ],
+            "brand": "Excelo",
+            "sku": "SNA-COO-100",
+            "weight": 2,
+            "dimensions": {
+                "width": 9.89,
+                "height": 18.2,
+                "depth": 9.44
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111259343344"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/125/934/3344/front_fr.18.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/125/934/3344/front_fr.18.400.jpg"
+        },
+        {
+            "id": 101,
+            "title": "Cookie\ud83c\udf6a cacao p\u00e9pites Sans Sucre",
+            "description": "Cookie\ud83c\udf6a cacao p\u00e9pites Sans Sucre (130 g). Trusted quality from Gerbl\u00e9.",
+            "category": "snacks",
+            "price": 10.25,
+            "discountPercentage": 10.14,
+            "rating": 4.41,
+            "stock": 46,
+            "tags": [
+                "snacks",
+                "cookies"
+            ],
+            "brand": "Gerbl\u00e9",
+            "sku": "SNA-COO-101",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.77,
+                "height": 5.03,
+                "depth": 7.92
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3175681105423"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/317/568/110/5423/front_en.80.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/317/568/110/5423/front_en.80.400.jpg"
+        },
+        {
+            "id": 102,
+            "title": "Biscuit soja orange",
+            "description": "Biscuit soja orange (280 g). Trusted quality from Gerbl\u00e9.",
+            "category": "snacks",
+            "price": 17.29,
+            "discountPercentage": 13.21,
+            "rating": 4.95,
+            "stock": 73,
+            "tags": [
+                "snacks",
+                "cookies"
+            ],
+            "brand": "Gerbl\u00e9",
+            "sku": "SNA-COO-102",
+            "weight": 3,
+            "dimensions": {
+                "width": 5.67,
+                "height": 19.98,
+                "depth": 9.48
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3175680011442"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/317/568/001/1442/front_en.142.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/317/568/001/1442/front_en.142.400.jpg"
+        },
+        {
+            "id": 103,
+            "title": "Sabl\u00e9s Anglais L'Original",
+            "description": "Sabl\u00e9s Anglais L'Original (400 g). Trusted quality from McVitie's.",
+            "category": "snacks",
+            "price": 16.55,
+            "discountPercentage": 14.31,
+            "rating": 4.98,
+            "stock": 108,
+            "tags": [
+                "snacks",
+                "cookies"
+            ],
+            "brand": "McVitie's",
+            "sku": "SNA-COO-103",
+            "weight": 1,
+            "dimensions": {
+                "width": 7.22,
+                "height": 10.84,
+                "depth": 8.67
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5000168198491"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/500/016/819/8491/front_en.193.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/500/016/819/8491/front_en.193.400.jpg"
+        },
+        {
+            "id": 104,
+            "title": "Green Tea",
+            "description": "Green Tea (200 g). Trusted quality from green tea.",
+            "category": "beverages",
+            "price": 7.72,
+            "discountPercentage": 9.29,
+            "rating": 4.68,
+            "stock": 52,
+            "tags": [
+                "beverages",
+                "tea"
+            ],
+            "brand": "green tea",
+            "sku": "BEV-TEA-104",
+            "weight": 5,
+            "dimensions": {
+                "width": 5.06,
+                "height": 14.67,
+                "depth": 7.24
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6923818812082"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/692/381/881/2082/front_en.5.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/692/381/881/2082/front_en.5.400.jpg"
+        },
+        {
+            "id": 105,
+            "title": "41022",
+            "description": "41022 (Standard Pack). Trusted quality from Generic.",
+            "category": "beverages",
+            "price": 16.32,
+            "discountPercentage": 6.68,
+            "rating": 4.8,
+            "stock": 116,
+            "tags": [
+                "beverages",
+                "tea"
+            ],
+            "brand": "Generic",
+            "sku": "BEV-TEA-105",
+            "weight": 4,
+            "dimensions": {
+                "width": 11.64,
+                "height": 6.93,
+                "depth": 9.44
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111175000741"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/117/500/0741/front_ar.6.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/117/500/0741/front_ar.6.400.jpg"
+        },
+        {
+            "id": 106,
+            "title": "\u0634\u0627\u064a \u0627\u0644\u0646\u0633\u0645\u0629",
+            "description": "\u0634\u0627\u064a \u0627\u0644\u0646\u0633\u0645\u0629 (500g). Trusted quality from JANAH FRERES.",
+            "category": "beverages",
+            "price": 10.56,
+            "discountPercentage": 12.92,
+            "rating": 3.89,
+            "stock": 73,
+            "tags": [
+                "beverages",
+                "tea"
+            ],
+            "brand": "JANAH FRERES",
+            "sku": "BEV-TEA-106",
+            "weight": 4,
+            "dimensions": {
+                "width": 7.39,
+                "height": 18.13,
+                "depth": 9.38
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111243640831"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/364/0831/front_en.19.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/364/0831/front_en.19.400.jpg"
+        },
+        {
+            "id": 107,
+            "title": "PET 1.25L FUZE TEA PECHE",
+            "description": "PET 1.25L FUZE TEA PECHE (1.25 L). Trusted quality from fuze tea.",
+            "category": "beverages",
+            "price": 4.09,
+            "discountPercentage": 9.59,
+            "rating": 3.04,
+            "stock": 50,
+            "tags": [
+                "beverages",
+                "tea"
+            ],
+            "brand": "fuze tea",
+            "sku": "BEV-TEA-107",
+            "weight": 4,
+            "dimensions": {
+                "width": 10.81,
+                "height": 17.25,
+                "depth": 6.98
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5449000232250"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/544/900/023/2250/front_en.223.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/544/900/023/2250/front_en.223.400.jpg"
+        },
+        {
+            "id": 108,
+            "title": "Ice tea",
+            "description": "Ice tea (1250 ml). Trusted quality from Lipton.",
+            "category": "beverages",
+            "price": 15.31,
+            "discountPercentage": 10.62,
+            "rating": 4.48,
+            "stock": 19,
+            "tags": [
+                "beverages",
+                "tea"
+            ],
+            "brand": "Lipton",
+            "sku": "BEV-TEA-108",
+            "weight": 1,
+            "dimensions": {
+                "width": 12.88,
+                "height": 19.98,
+                "depth": 6.41
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3168930170549"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/316/893/017/0549/front_fr.36.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/316/893/017/0549/front_fr.36.400.jpg"
+        },
+        {
+            "id": 109,
+            "title": "Vip crema gold",
+            "description": "Vip crema gold (80 g). Trusted quality from VIP.",
+            "category": "beverages",
+            "price": 13.72,
+            "discountPercentage": 5.9,
+            "rating": 4.15,
+            "stock": 22,
+            "tags": [
+                "beverages",
+                "coffee"
+            ],
+            "brand": "VIP",
+            "sku": "BEV-COF-109",
+            "weight": 2,
+            "dimensions": {
+                "width": 11.78,
+                "height": 5.06,
+                "depth": 8.89
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111250473453"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/125/047/3453/front_en.13.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/125/047/3453/front_en.13.400.jpg"
+        },
+        {
+            "id": 110,
+            "title": "Chicor\u00e9e soluble nature",
+            "description": "Chicor\u00e9e soluble nature (200 g). Trusted quality from Leroux.",
+            "category": "beverages",
+            "price": 17.45,
+            "discountPercentage": 11.32,
+            "rating": 3.02,
+            "stock": 70,
+            "tags": [
+                "beverages",
+                "coffee"
+            ],
+            "brand": "Leroux",
+            "sku": "BEV-COF-110",
+            "weight": 3,
+            "dimensions": {
+                "width": 11.06,
+                "height": 16.11,
+                "depth": 7.74
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "3067140013120"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/306/714/001/3120/front_en.274.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/306/714/001/3120/front_en.274.400.jpg"
+        },
+        {
+            "id": 111,
+            "title": "Chicor\u00e9e & Caf\u00e9, RICOR\u00c9\u00ae L'Original, Bo\u00eete de 260g",
+            "description": "Chicor\u00e9e & Caf\u00e9, RICOR\u00c9\u00ae L'Original, Bo\u00eete de 260g (260 g). Trusted quality from Nestl\u00e9.",
+            "category": "beverages",
+            "price": 8.23,
+            "discountPercentage": 12.95,
+            "rating": 4.59,
+            "stock": 98,
+            "tags": [
+                "beverages",
+                "coffee"
+            ],
+            "brand": "Nestl\u00e9",
+            "sku": "BEV-COF-111",
+            "weight": 2,
+            "dimensions": {
+                "width": 7.77,
+                "height": 15.2,
+                "depth": 5.96
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "7613032655495"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/761/303/265/5495/front_fr.351.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/761/303/265/5495/front_fr.351.400.jpg"
+        },
+        {
+            "id": 112,
+            "title": "Samar Gusto Coffee 45g",
+            "description": "Samar Gusto Coffee 45g (45g 26 dh). Trusted quality from samar.",
+            "category": "beverages",
+            "price": 14.69,
+            "discountPercentage": 12.19,
+            "rating": 4.54,
+            "stock": 29,
+            "tags": [
+                "beverages",
+                "coffee"
+            ],
+            "brand": "samar",
+            "sku": "BEV-COF-112",
+            "weight": 1,
+            "dimensions": {
+                "width": 11.08,
+                "height": 11.33,
+                "depth": 7.55
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111243002493"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/300/2493/front_fr.4.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/300/2493/front_fr.4.400.jpg"
+        },
+        {
+            "id": 113,
+            "title": "Classic",
+            "description": "Classic (50 g). Trusted quality from V.I.P.",
+            "category": "beverages",
+            "price": 6.51,
+            "discountPercentage": 8.17,
+            "rating": 4.12,
+            "stock": 10,
+            "tags": [
+                "beverages",
+                "coffee"
+            ],
+            "brand": "V.I.P",
+            "sku": "BEV-COF-113",
+            "weight": 5,
+            "dimensions": {
+                "width": 13.32,
+                "height": 15.34,
+                "depth": 8.74
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111250470254"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/125/047/0254/front_en.6.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/125/047/0254/front_en.6.400.jpg"
+        },
+        {
+            "id": 114,
+            "title": "Cappy PULPY",
+            "description": "Cappy PULPY (1L). Trusted quality from Coca cola.",
+            "category": "beverages",
+            "price": 15.97,
+            "discountPercentage": 13.29,
+            "rating": 3.61,
+            "stock": 22,
+            "tags": [
+                "beverages",
+                "juice"
+            ],
+            "brand": "Coca cola",
+            "sku": "BEV-JUI-114",
+            "weight": 3,
+            "dimensions": {
+                "width": 12.4,
+                "height": 19.03,
+                "depth": 8.68
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5449000147417"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/544/900/014/7417/front_en.73.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/544/900/014/7417/front_en.73.400.jpg"
+        },
+        {
+            "id": 115,
+            "title": "PRESSup ORANGE 1L",
+            "description": "PRESSup ORANGE 1L (950g). Trusted quality from jaouda.",
+            "category": "beverages",
+            "price": 15.66,
+            "discountPercentage": 6.65,
+            "rating": 3.38,
+            "stock": 31,
+            "tags": [
+                "beverages",
+                "juice"
+            ],
+            "brand": "jaouda",
+            "sku": "BEV-JUI-115",
+            "weight": 5,
+            "dimensions": {
+                "width": 6.43,
+                "height": 15.86,
+                "depth": 8.77
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242104198"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/4198/front_fr.43.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/4198/front_fr.43.400.jpg"
+        },
+        {
+            "id": 116,
+            "title": "Press up",
+            "description": "Press up (Standard Pack). Trusted quality from Generic.",
+            "category": "beverages",
+            "price": 6.12,
+            "discountPercentage": 13.67,
+            "rating": 4.52,
+            "stock": 109,
+            "tags": [
+                "beverages",
+                "juice"
+            ],
+            "brand": "Generic",
+            "sku": "BEV-JUI-116",
+            "weight": 3,
+            "dimensions": {
+                "width": 7.94,
+                "height": 18.0,
+                "depth": 5.48
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242107380"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/7380/front_fr.3.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/7380/front_fr.3.400.jpg"
+        },
+        {
+            "id": 117,
+            "title": "Jutos",
+            "description": "Jutos (1 lt). Trusted quality from Jaouda.",
+            "category": "beverages",
+            "price": 12.64,
+            "discountPercentage": 13.36,
+            "rating": 4.13,
+            "stock": 91,
+            "tags": [
+                "beverages",
+                "juice"
+            ],
+            "brand": "Jaouda",
+            "sku": "BEV-JUI-117",
+            "weight": 1,
+            "dimensions": {
+                "width": 13.35,
+                "height": 10.7,
+                "depth": 7.55
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242106666"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/6666/front_fr.29.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/6666/front_fr.29.400.jpg"
+        },
+        {
+            "id": 118,
+            "title": "Press Up moyen",
+            "description": "Press Up moyen (Standard Pack). Trusted quality from Jaouda.",
+            "category": "beverages",
+            "price": 9.66,
+            "discountPercentage": 14.02,
+            "rating": 3.57,
+            "stock": 126,
+            "tags": [
+                "beverages",
+                "juice"
+            ],
+            "brand": "Jaouda",
+            "sku": "BEV-JUI-118",
+            "weight": 4,
+            "dimensions": {
+                "width": 14.34,
+                "height": 7.41,
+                "depth": 7.07
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "6111242107366"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/611/124/210/7366/front_en.14.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/611/124/210/7366/front_en.14.400.jpg"
+        },
+        {
+            "id": 119,
+            "title": "Coca-Cola Original Taste",
+            "description": "Coca-Cola Original Taste (0.5l). Trusted quality from Coca-Cola.",
+            "category": "beverages",
+            "price": 8.91,
+            "discountPercentage": 11.26,
+            "rating": 4.86,
+            "stock": 66,
+            "tags": [
+                "beverages",
+                "soda"
+            ],
+            "brand": "Coca-Cola",
+            "sku": "BEV-SOD-119",
+            "weight": 1,
+            "dimensions": {
+                "width": 12.63,
+                "height": 9.01,
+                "depth": 6.91
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "54491472"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/000/005/449/1472/front_en.624.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/000/005/449/1472/front_en.624.400.jpg"
+        },
+        {
+            "id": 120,
+            "title": "Coke Zero",
+            "description": "Coke Zero (330 ml). Trusted quality from Coca-Cola.",
+            "category": "beverages",
+            "price": 15.67,
+            "discountPercentage": 7.93,
+            "rating": 3.03,
+            "stock": 120,
+            "tags": [
+                "beverages",
+                "soda"
+            ],
+            "brand": "Coca-Cola",
+            "sku": "BEV-SOD-120",
+            "weight": 5,
+            "dimensions": {
+                "width": 11.56,
+                "height": 8.33,
+                "depth": 7.49
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5449000214799"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_en.326.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_en.326.400.jpg"
+        },
+        {
+            "id": 121,
+            "title": "Hawai Tropical",
+            "description": "Hawai Tropical (1 L). Trusted quality from Hawai.",
+            "category": "beverages",
+            "price": 13.89,
+            "discountPercentage": 12.8,
+            "rating": 3.79,
+            "stock": 124,
+            "tags": [
+                "beverages",
+                "soda"
+            ],
+            "brand": "Hawai",
+            "sku": "BEV-SOD-121",
+            "weight": 4,
+            "dimensions": {
+                "width": 14.83,
+                "height": 8.87,
+                "depth": 8.14
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5449000036872"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/544/900/003/6872/front_en.44.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/544/900/003/6872/front_en.44.400.jpg"
+        },
+        {
+            "id": 122,
+            "title": "Coca Cola Original Taste",
+            "description": "Coca Cola Original Taste (1 l). Trusted quality from Coca-Cola.",
+            "category": "beverages",
+            "price": 10.63,
+            "discountPercentage": 5.91,
+            "rating": 3.2,
+            "stock": 94,
+            "tags": [
+                "beverages",
+                "soda"
+            ],
+            "brand": "Coca-Cola",
+            "sku": "BEV-SOD-122",
+            "weight": 3,
+            "dimensions": {
+                "width": 8.72,
+                "height": 5.16,
+                "depth": 8.4
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5449000054227"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/544/900/005/4227/front_en.406.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/544/900/005/4227/front_en.406.400.jpg"
+        },
+        {
+            "id": 123,
+            "title": "Coca-Cola Zero Az\u00facar",
+            "description": "Coca-Cola Zero Az\u00facar (0.5l). Trusted quality from Coca-Cola.",
+            "category": "beverages",
+            "price": 15.37,
+            "discountPercentage": 12.14,
+            "rating": 3.28,
+            "stock": 37,
+            "tags": [
+                "beverages",
+                "soda"
+            ],
+            "brand": "Coca-Cola",
+            "sku": "BEV-SOD-123",
+            "weight": 1,
+            "dimensions": {
+                "width": 5.46,
+                "height": 10.76,
+                "depth": 8.55
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Standard Shipping",
+            "availabilityStatus": "In Stock",
+            "reviews": [],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2026-01-01T00:00:00.000Z",
+                "updatedAt": "2026-01-01T00:00:00.000Z",
+                "barcode": "5449000131836"
+            },
+            "images": [
+                "https://images.openfoodfacts.org/images/products/544/900/013/1836/front_en.599.400.jpg"
+            ],
+            "thumbnail": "https://images.openfoodfacts.org/images/products/544/900/013/1836/front_en.599.400.jpg"
+        }
+    ]
+}
