@@ -1,3 +1,7 @@
+#PROJECT_DEMO 
+
+
+
 # FreshMart – Smart Retail Platform
 
 FreshMart is a GenAI-powered retail application designed to increase
