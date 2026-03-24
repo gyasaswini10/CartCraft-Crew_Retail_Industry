@@ -1,6 +1,10 @@
 
 
 
+https://github.com/user-attachments/assets/489c0024-3b17-4b12-9653-05d457fc3804
+
+
+
 # FreshMart – Smart Retail Platform
 
 FreshMart is a GenAI-powered retail application designed to increase
